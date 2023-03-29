@@ -245,7 +245,7 @@ p{
     #home-grid{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 10vh 50vh 60vh 10vh;
+        grid-template-rows: 10vh 50vh 70vh 10vh;
         grid-template-areas: 
         "one one"
         "empty empty"
@@ -344,11 +344,43 @@ p{
         background-color: black;
         width: 100%;
     }
+
+    .three{
+        grid-area: three;
+        background-color: aqua;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 1.3em;
+        line-height: 20px;
+        padding: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        
+    }
     
 
-
-
+    
+    .plataformas{
+        margin-top:5px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
+
+
 
 
 /*--------- historia.html ------------- */
