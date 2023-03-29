@@ -15,11 +15,11 @@ body{
     
 }
 .body-img{ 
-    background-image: url(../img/nefertiti.webp);
+    background-image: url(../img/nefertiti-mobile-1.webp);
     background-repeat: no-repeat;
     background-color: black;
     
-    background-size: cover;
+    background-size: 100%;
    
     }
 
@@ -140,69 +140,216 @@ p{
 
 /* ------- contenido main index.html -------- */
 
-.contenido-main{
-    
-    
-    min-height: 80vh;
-    display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-    align-items: center;
-    }
-
-.table-contenedor{
-    
-    margin-left: 20px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    line-height: 20px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-   
+#home-grid{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 55vh 40vh 40vh 10vh ;
+    grid-template-areas: 
+    "one"
+    "empty"
+    "two"
+    "three"
+    "four";
 }
 
-
-
+.one{
+    grid-area: one;
+    margin-top: 5px;
+    
+}
+.empty{
+    grid-area: empty;
+    
+}
+.two{
+    grid-area: two;
+    border-radius: 10px;
+    font-size: 0.8em;
+    line-height: 10px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
 .boton-tickets{
     background-color: red;
-    width:180px;
-    height:25px;
+    width:120px;
+    height:17px;
     border-radius: 2px;
     color: rgb(255, 255, 255);
     font-size: 0.9em;
     margin-top: 10px;
+    
 }
 
-.rightColumn{
+.three{
+    grid-area: three;
+    margin-top: 5px;
     border-radius: 10px;
-    margin-right: 20px;
-    line-height: 25px;
+    line-height: 20px;
     display: flex;
-	flex-direction: column;
-	justify-content:flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+	
+	
 	
 	
     
 }
-
-    .rightColumn a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
-    }
-.rightColumn a:hover {
-    color:rgb(137, 137, 137) ;
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+    .links a{
+        text-decoration: none;
+        font-size: 1.2rem;
+    } 
+
 .plataformas{
     margin-top:5px;
     display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 
 }
+
+.four{
+    grid-area: four;
+    margin-top: 5px;
+    
+}
+
+
+
+/* -------- 1er breakpoint --------- */
+@media (min-width:768px){
+    .body-img{
+        background-image: url(../img/nefertiti-768.webp);
+        background-repeat: no-repeat;
+        background-color: black;
+        width: 100%;
+    
+
+    }
+    #home-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 10vh 50vh 60vh 10vh;
+        grid-template-areas: 
+        "one one"
+        "empty empty"
+        "two three"
+        "four four";
+    }
+
+    .empty{
+        grid-area: empty;
+        height: 30vh;
+
+    }
+    .one{
+        grid-area: one;
+        margin-top: 5px;
+    }
+    .two{
+        grid-area: two;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+        line-height: 20px;
+        padding: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+    }
+      .two .boton-tickets{
+        background-color: red;
+        width:200px;
+        height:22px;
+        border-radius: 2px;
+        color: rgb(255, 255, 255);
+        font-size: 0.9em;
+        margin-top: 10px;
+        
+    }
+    
+    .three{
+        grid-area: three;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+        line-height: 20px;
+        padding: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        
+        
+        
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        
+    }
+    
+        .links a{
+            text-decoration: none;
+            font-size: 1.2em;
+        } 
+    
+    .plataformas{
+        margin-top:5px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        
+        
+    
+    
+    }
+    
+    .four{
+        grid-area: four;
+        margin-top: 5px;
+        
+        
+    }
+}
+
+/* ----------------- 2do breakpoint ------------------ */
+@media (min-width:1200px){
+    .body-img{
+        background-image: url(../img/nefertiti.webp);
+        background-repeat: no-repeat;
+        background-color: black;
+        width: 100%;
+    }
+    
+
+
+
+}
+
 
 /*--------- historia.html ------------- */
 
