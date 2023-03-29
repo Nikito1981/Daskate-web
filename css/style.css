@@ -143,17 +143,17 @@ p{
 #home-grid{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh 55vh 40vh 40vh 10vh ;
+    grid-template-rows: 10vh 55vh 40vh 35vh 10vh ;
     grid-template-areas: 
-    "one"
+    "primera"
     "empty"
-    "two"
-    "three"
-    "four";
+    "tabla"
+    "enlaces"
+    "ultima";
 }
 
-.one{
-    grid-area: one;
+.primera{
+    grid-area: primera;
     margin-top: 5px;
     
 }
@@ -161,10 +161,10 @@ p{
     grid-area: empty;
     
 }
-.two{
-    grid-area: two;
+.tabla{
+    grid-area: tabla;
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 10px;
     padding: 0px;
     text-align: center;
@@ -176,56 +176,49 @@ p{
 }
 .boton-tickets{
     background-color: red;
-    width:120px;
-    height:17px;
+    width:110px;
+    height:25px;
     border-radius: 2px;
     color: rgb(255, 255, 255);
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 10px;
     
 }
 
-.three{
-    grid-area: three;
-    margin-top: 5px;
+.enlaces{
+    grid-area: enlaces;
     border-radius: 10px;
     line-height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-	
-	
-	
-	
-    
-}
-.links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+        
 }
 
-    .links a{
+.links a{
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1em;
+        color: rgb(215, 189, 24);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
     } 
 
 .plataformas{
     margin-top:5px;
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    
+    
+    
 
 
 }
 
-.four{
-    grid-area: four;
+.ultima{
+    grid-area: ultima;
     margin-top: 5px;
     
 }
@@ -247,10 +240,10 @@ p{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 10vh 50vh 70vh 10vh;
         grid-template-areas: 
-        "one one"
+        "primera primera"
         "empty empty"
-        "two three"
-        "four four";
+        "tabla enlaces"
+        "ultima ultima";
     }
 
     .empty{
@@ -258,15 +251,15 @@ p{
         height: 30vh;
 
     }
-    .one{
-        grid-area: one;
+    .header{
+        grid-area: header;
         margin-top: 5px;
     }
-    .two{
-        grid-area: two;
+    .tabla{
+        grid-area: tabla;
         margin-left: 10px;
         border-radius: 10px;
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 20px;
         padding: 0px;
         text-align: left;
@@ -276,7 +269,7 @@ p{
         align-items: flex-start;
        
     }
-      .two .boton-tickets{
+      .tabla .boton-tickets{
         background-color: red;
         width:200px;
         height:22px;
@@ -287,33 +280,32 @@ p{
         
     }
     
-    .three{
-        grid-area: three;
-        margin-left: 10px;
+    .enlaces{
+        grid-area: enlaces;
+        margin-right: 10px;
         border-radius: 10px;
         font-size: 1em;
         line-height: 20px;
         padding: 0px;
-        text-align: left;
+        text-align: right;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
         
         
-        
-    }
-    .links{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
         
     }
     
+    
         .links a{
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            color: rgb(215, 189, 24);
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            align-items: flex-end;
         } 
     
     .plataformas{
@@ -328,8 +320,8 @@ p{
     
     }
     
-    .four{
-        grid-area: four;
+    .ultima{
+        grid-area: ultima;
         margin-top: 5px;
         
         
@@ -345,24 +337,14 @@ p{
         width: 100%;
     }
 
-    .three{
-        grid-area: three;
-        background-color: aqua;
-        margin-left: 10px;
+    .enlaces{
+        grid-area: enlaces;
+        margin-right: 20px;
         border-radius: 10px;
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 20px;
         padding: 0px;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        
-        
-    }
-    .links{
+        text-align: right;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -370,7 +352,16 @@ p{
         
     }
     
-
+    
+    .links a{
+            text-decoration: none;
+            font-size: 1.3em;
+            color: rgb(215, 189, 24);
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            align-items: flex-end;
+        } 
     
     .plataformas{
         margin-top:5px;
@@ -380,7 +371,7 @@ p{
     }
 }
 
-
+/* ----------- ends index.html ---------- */
 
 
 /*--------- historia.html ------------- */
@@ -475,70 +466,7 @@ p{
 }
 
 
-
-
-
-
-.form-text{
-    font-size: 1.2em;
-    text-align: justify;
-    line-height: 2em;
-}
-.form-flex{
-    
-    margin-left: 20px;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: flex-end;
-    
-}
-.message-box{
-    width: 600px;
-    text-align: center;
-}
-.last{
-   
-    font-size: small;
-    line-height: normal;
-    
-}
-.booking-box{
-    
-    height: 290px;
-    margin-right: 10px;
-    background-color: rgba(189, 189, 189, 0.358);
-    color:rgb(255, 255, 255);
-    padding: 10px 10px;
-    border: none;
-    border-radius: 10px;
-    
-    
-    
-}
-footer{
-    background-color: rgb(0, 0, 0);
-    
-}   
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-    
-
-
-.footer-text{    
-    font-size: small;
-}
-
-
-
-
-
-/* ----------------- Tienda con grid -------------------*/te
+/* ----------------- Tienda con grid -------------------*/
 
 
     
@@ -718,8 +646,6 @@ padding:4px;
 
 }
 
-
-
 .six figure{
     margin-top: 20px;
     display: flex;
@@ -751,5 +677,60 @@ padding:4px;
 
 }
 
+/* -------------- contacto.html ----------------- */
+
+.form-text{
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 2em;
+}
+.form-flex{
+    
+    margin-left: 20px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-end;
+    
+}
+.message-box{
+    width: 600px;
+    text-align: center;
+}
+.last{
+   
+    font-size: small;
+    line-height: normal;
+    
+}
+.booking-box{
+    
+    height: 290px;
+    margin-right: 10px;
+    background-color: rgba(189, 189, 189, 0.358);
+    color:rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+        
+}
+
+/* -------------- footer ------------- */
 
 
+
+footer{
+    background-color: rgb(0, 0, 0);
+    
+}   
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+    
+.footer-text{    
+    font-size: small;
+}
