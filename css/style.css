@@ -15,7 +15,7 @@ body{
     
 }
 .body-img{ 
-    background-image: url(../img/nefertiti-mobile-1.webp);
+    background-image: url(../img/NefertitiBG360.webp);
     background-repeat: no-repeat;
     background-color: black;
     
@@ -88,7 +88,9 @@ p{
 .text-left{
     text-align: left;
 }
-
+.icon{
+    width: 150px;
+}
 
 .logo-negro{
     width: 130px;
@@ -143,7 +145,7 @@ p{
 #home-grid{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh 55vh 40vh 35vh 10vh ;
+    grid-template-rows: 10vh 40vh 25vh 25vh 10vh ;
     grid-template-areas: 
     "primera"
     "empty"
@@ -228,7 +230,7 @@ p{
 /* -------- 1er breakpoint --------- */
 @media (min-width:768px){
     .body-img{
-        background-image: url(../img/nefertiti-768.webp);
+        background-image: url(../img/NefertitiBG768.webp);
         background-repeat: no-repeat;
         background-color: black;
         width: 100%;
@@ -238,7 +240,7 @@ p{
     #home-grid{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 10vh 50vh 70vh 10vh;
+        grid-template-rows: 10vh 50vh 50vh 5vh;
         grid-template-areas: 
         "primera primera"
         "empty empty"
@@ -331,11 +333,23 @@ p{
 /* ----------------- 2do breakpoint ------------------ */
 @media (min-width:1200px){
     .body-img{
-        background-image: url(../img/nefertiti.webp);
+        background-image: url(../img/NefertitiBG1200.webp);
         background-repeat: no-repeat;
         background-color: black;
-        width: 100%;
+        background-size: 100%;
     }
+
+    #home-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 10vh 70vh 50vh 5vh;
+        grid-template-areas: 
+        "primera primera"
+        "empty empty"
+        "tabla enlaces"
+        "ultima ultima";
+    }
+    
 
     .enlaces{
         grid-area: enlaces;
@@ -402,76 +416,238 @@ p{
         width: 200px;
 }
 
-.discografia{
-    width: 85%;
-    margin: 10px auto 10px auto;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+/* --------------- musica.html ------------------ */
+
+#gridDiscografia{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "navegador"
+    "discos"
+    "enlacesMusica"
+    "escuchanos"
+    "pie";
 }
-.discografia-img{
+.navegador{
+    grid-area: navegador;
+   
+}
+
+.discos{
+    grid-area: discos;
+    
+	
+}
+    .discografia{
+        width: 100%;
+        margin: 10px auto 10px auto;
+        display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    }
+    .tapa{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-size{
         width: 300px;
         height: 300px;
-}
-.contenedor-plataformas{
-    width:20%;
-    height: 50px;
-    object-fit: cover;
-    padding: 10px;
+    }
+
+.enlacesMusica{
+    grid-area: enlacesMusica;
+    margin-top: 30px;
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
 }
-.musica-plataformas {
-        line-height: 30px;
+
+.escuchanos{
+    grid-area: escuchanos;
+}
+
+.pie{
+    grid-area: pie;
+}
+
+/* ------------ 1er breakpoint -------------- */
+
+@media (min-width:768px){
+
+    #gridDiscografia{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "navegador"
+        "discos"
+        "enlacesMusica"
+        "escuchanos"
+        "pie";
+    }
+
+}
+
+/* ------------- 2dp breakpoint ------------- */
+
+@media (min-width:768px){
+    #gridDiscografia{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "navegador"
+        "discos"
+        "enlacesMusica"
+        "escuchanos"
+        "pie";
+    }
+
+    .discos{
+        grid-area: discos;
+        display: flex;
+	    flex-direction: row;
+	    justify-content: space-evenly;
+	    align-items: center;
+
+    }
+        
+	    
+    .tapa{
+        margin-top: 20px;
+        
+    }
+    .img-size{
+        width: 300px;
+        height: 300px;
+    }
+
+    .enlacesMusica{
+        grid-area: enlacesMusica;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+}
+
+/* ---------------- videos.hmtl -------------- */
+#gridVideos{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header-v"
+    "main-v"
+    "section-v"
+    "footer-v";
+}
+
+.header-v{
+    grid-area: header-v;
+}
+.main-v{
+    grid-area: main-v;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.video-contenedor {
+    width: 90%;
+
+}
+ 
+.video-contenedor iframe {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    
+ 
+    
+    
+}
+
+.section-v{
+    grid-area: section-v;
+}
+    .youtube-icon{
+        width: 100px;
+    }
+    .link-youtube{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         align-content: center;
-    
+    }
+
+
+footer-v{
+    grid-area: footer-v;
 }
+/* ----------------- 1er breakpoint ---------------- */
+@media (min-width:768px){
+
+    #gridVideos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header-v"
+        "main-v"
+        "section-v"
+        "footer-v";
+    }
+
+    .video-contenedor iframe {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+        
+
+}
+}
+
+/* ----------------- 2do breakpoint ----------------- */
+
+@media (min-width:400px){
+
+    #gridVideos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header-v"
+        "main-v"
+        "section-v"
+        "footer-v";
+    }
+
+    .video-contenedor iframe {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+       
+}
+}
+    
+
 
 .icon-size{
     width: 30px;
     height: 30px;
 }
 
-.videos{
-        margin-top:20px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-}
-.youtube-icon{
-    width: 100px;
-}
-.link-youtube{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-}
-
 
 /* ----------------- Tienda con grid -------------------*/
-
-
-    
-
-    
 
     .container-p{
         
