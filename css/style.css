@@ -31,9 +31,7 @@ header{
 .background-white{
     background-color: #ffffff;
 }
-.bg-gris{
-    background-color: aliceblue;
-}
+
 .text-white{
     color: white;
 }
@@ -64,9 +62,7 @@ header{
 .margin-auto{
     margin:auto;
 }
-h1,
-h2,
-h3,
+
 p{
     font-weight: 500;
 }
@@ -391,30 +387,215 @@ p{
 /*--------- historia.html ------------- */
 
 .box-historia{
-    width: 90%;
+   
     margin-top: 10px;
-    margin-left: 60px;
     line-height: 1.9em;
     text-align: center;
-    font-size: 1.3rem;
     background-image: url(../img/historia.html/fuego-historia.png);
-    background-position: center;
+    background-position:center;
     background-repeat:no-repeat;
     background-size: 100%;
     background-attachment:scroll;
    }
-.integrantes{
-    margin: 5px 100px 30px 100px;
+   .gridHistoria{
+    width: 90%;
+    margin-left: 20px;    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    "texto" 
+    "lea"
+    "euge"
+    "ruso"
+    "tano"
+    "cache";
+}
+   
+#texto{
+    grid-area: texto;
+}
+
+#lea{
+    grid-area: lea;
+    background-image: url(../img/historia.html/Lea250.webp);
+    
+    
+    
+
+
+}
+#euge{
+    grid-area: euge;
+    background-image: url(../img/historia.html/euge250.webp);
+    
+
+
+}
+#tano{
+    grid-area: tano;
+    background-image: url(../img/historia.html/tano250.webp);
+    
+    background-size: 100%;
+    
+    ;
+}
+#ruso{
+    grid-area: ruso;
+    background-image: url(../img/historia.html/ruso250.webp);
+    
+
+}
+#cache{
+    grid-area: cache;
+    background-image: url(../img/historia.html/cache250.webp);
+    
+}
+.historia{
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
-.images{
-        width: 200px;
+.texto{
+    width: 60%;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
 }
+/* ---------- 1er break point ------------ */
+@media (min-width:768px){
+    .gridHistoria{
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "texto"
+        "lea"
+        "euge"
+        "ruso"
+        "tano"
+        "cache";
+    }
+    #texto{
+        grid-area: texto;
+    }
+    
+    #lea{
+        grid-area: lea;
+        background-image: url(../img/historia.html/Lea.webp);
+        background-image: 100%;
+    
+    
+    }
+    #euge{
+        grid-area: euge;
+        background-image: url(../img/historia.html/euge400.webp);
+    
+    }
+    #tano{
+        grid-area: tano;
+        background-image: url(../img/historia.html/tano2.jpg);
+       
+    }
+    #ruso{
+        grid-area: ruso;
+        background-image: url(../img/historia.html/ruso.webp);
+        }
+    #cache{
+        grid-area: cache;
+        background-image: url(../img/historia.html/cache400px.webp);
+        
+       
+    }
+    
+/* -----------2do break point---------- */
+}
+@media (min-width:1200px){
+    .gridHistoria{
+        width: 50%;
+        margin-left: 150px;
+        margin-top: 20px;
+        display: grid;
+        
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: auto 300px 150px 250px ;
+        grid-template-areas: 
+        "texto texto texto"
+        "lea lea euge"
+        "ruso tano euge"
+        "ruso tano cache";
+    }
+    
+    #lea{
+        grid-area: lea;
+        background-image: url(../img/historia.html/Lea.webp);
+        
+        background-size: 100%;
+        size-adjust: 100%;
+    
+    
+    }
+    #euge{
+        grid-area: euge;
+        background-image: url(../img/historia.html/euge400.webp);
+        
+        background-size: 100%;
+    
+    
+    }
+    #tano{
+        grid-area: tano;
+        background-image: url(../img/historia.html/tano2.jpg);
+        
+        background-size: 100%;
+        
+        ;
+    }
+    #ruso{
+        grid-area: ruso;
+        background-image: url(../img/historia.html/ruso.webp);
+       
+        background-size: 100%;
+    
+    }
+    #cache{
+        grid-area: cache;
+        background-image: url(../img/historia.html/cache400px.webp);
+       
+    }
+    .texto{
+        width: 90%;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+    .box-historia{
+        width: 100%;
+        margin-top: 10px;
+        line-height: 1.9em;
+        text-align: center;
+        background-image: url(../img/historia.html/fuego-historia.png);
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size: 100%;
+        background-attachment:scroll;
+       }
+    
+
+}
+
 
 /* --------------- musica.html ------------------ */
 
