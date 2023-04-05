@@ -511,7 +511,7 @@ p{
         }
     #cache{
         grid-area: cache;
-        background-image: url(../img/historia.html/cache400px.webp);
+        background-image: url(../img/historia.html/cache1.webp);
         
        
     }
@@ -568,7 +568,8 @@ p{
     }
     #cache{
         grid-area: cache;
-        background-image: url(../img/historia.html/cache400px.webp);
+        background-image: url(../img/historia.html/cache1.webp);
+        background-image: 100%;
        
     }
     .texto{
