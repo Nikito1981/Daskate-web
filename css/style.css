@@ -403,15 +403,16 @@ p{
     display: grid;
     
     grid-template-columns: 1fr;
-    grid-template-rows: auto ;
+    grid-template-rows: auto 250px 480px 450px 450px 280px;
     grid-template-areas:
     "texto" 
     "lea"
     "euge"
-    "ruso"
     "tano"
+    "ruso"
     "cache";
-}
+   }
+
    
 #texto{
     grid-area: texto;
@@ -419,37 +420,50 @@ p{
 
 #lea{
     grid-area: lea;
-    background-image: url(../img/historia.html/Lea250.webp);
+    background-image: url(../img/historia.html/Lea350.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
     
-    
-    
-
-
 }
 #euge{
     grid-area: euge;
-    background-image: url(../img/historia.html/euge250.webp);
+    background-image: url(../img/historia.html/euge350px.webp);
+    margin-left: 5px;
+    background-size: 100%;
+    margin-top: 10px;
     
 
 
 }
 #tano{
     grid-area: tano;
-    background-image: url(../img/historia.html/tano250.webp);
-    
+    background-image: url(../img/historia.html/tano350.webp); 
+    background-repeat: no-repeat;
     background-size: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
     
-    ;
+    
 }
 #ruso{
     grid-area: ruso;
-    background-image: url(../img/historia.html/ruso250.webp);
+    background-image: url(../img/historia.html/ruso350.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
     
 
 }
 #cache{
     grid-area: cache;
-    background-image: url(../img/historia.html/cache250.webp);
+    background-image: url(../img/historia.html/cache1.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
     
 }
 .historia{
@@ -464,9 +478,8 @@ p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-    
-}
+    }
+
 /* ---------- 1er break point ------------ */
 @media (min-width:768px){
     .gridHistoria{
@@ -475,7 +488,7 @@ p{
         margin-left: 80px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto 512px 900px 900px 800px 450px;
         grid-template-areas: 
         "texto"
         "lea"
@@ -490,34 +503,35 @@ p{
     
     #lea{
         grid-area: lea;
-        background-image: url(../img/historia.html/Lea.webp);
+        background-image: url(../img/historia.html/Lea768.webp);
         background-image: 100%;
     
     
     }
     #euge{
         grid-area: euge;
-        background-image: url(../img/historia.html/euge400.webp);
+        background-image: url(../img/historia.html/euge.jpg);
     
     }
     #tano{
         grid-area: tano;
-        background-image: url(../img/historia.html/tano2.jpg);
+        background-image: url(../img/historia.html/tano768.webp);
        
     }
     #ruso{
         grid-area: ruso;
-        background-image: url(../img/historia.html/ruso.webp);
+        background-image: url(../img/historia.html/ruso768.webp);
         }
     #cache{
         grid-area: cache;
-        background-image: url(../img/historia.html/cache1.webp);
+        background-image: url(../img/historia.html/cache768.webp);
         
        
     }
+}
     
 /* -----------2do break point---------- */
-}
+
 @media (min-width:1200px){
     .gridHistoria{
         width: 50%;
@@ -537,7 +551,6 @@ p{
     #lea{
         grid-area: lea;
         background-image: url(../img/historia.html/Lea.webp);
-        
         background-size: 100%;
         size-adjust: 100%;
     
@@ -546,7 +559,6 @@ p{
     #euge{
         grid-area: euge;
         background-image: url(../img/historia.html/euge400.webp);
-        
         background-size: 100%;
     
     
@@ -554,7 +566,6 @@ p{
     #tano{
         grid-area: tano;
         background-image: url(../img/historia.html/tano2.jpg);
-        
         background-size: 100%;
         
         ;
@@ -562,7 +573,6 @@ p{
     #ruso{
         grid-area: ruso;
         background-image: url(../img/historia.html/ruso.webp);
-       
         background-size: 100%;
     
     }
