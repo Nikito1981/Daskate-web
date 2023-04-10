@@ -1,0 +1,37 @@
+.form-text{
+    font-size: $textspecial;
+    text-align: justify;
+    line-height: $textLg;
+}
+.form-flex{
+    
+    margin-left: 20px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-end;
+    
+}
+.message-box{
+    width: 600px;
+    text-align: center;
+}
+.last{
+   
+    font-size: $textsm;
+    line-height: normal;
+    
+}
+.booking-box{
+    
+    height: 290px;
+    margin-right: 10px;
+    background-color: $bookingBoxColor;
+    color:$secondaryColor;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+        
+}

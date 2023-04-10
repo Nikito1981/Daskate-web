@@ -1,143 +1,3 @@
-@font-face {
-    font-family: Friz Quadrata ;
-    src: url(../fonts/AnyConv.com__Friz\ Quadrata\ Regular.woff);
-}
-*{
-    font-family: Friz Quadrata;
-    
-    
-}
-body{
-    background-color: black;
-    
-    
-    
-    
-}
-.body-img{ 
-    background-image: url(../img/NefertitiBG360.webp);
-    background-repeat: no-repeat;
-    background-color: black;
-    
-    background-size: 100%;
-   
-    }
-
-
-header{
-    width: 100%;
-    height: 130px;
-}
-.background-white{
-    background-color: #ffffff;
-}
-
-.text-white{
-    color: white;
-}
-.text-red{
-    color:red
-}
-.text-black{
-    color: black;
-}
-.text-center{
-    text-align: center;
-}
-.text-left{
-    text-align: left;
-}
-.margin-top{
-    margin: 20px;
-}
-.margin-left{
-    margin-left: 10px;
-}
-.margin-bottom{
-    margin-bottom: 10px;
-}
-.margin-right{
-    margin-right: 10px;
-}
-.margin-auto{
-    margin:auto;
-}
-
-p{
-    font-weight: 500;
-}
-h1{
-    font-size: 2em;
-}
-h2{
-    font-size: 1.25em;    
-}
-h3{
-    font-size: 1.1em ;
-}
-p{
-    font-size: 1em;
-}
-.text-right{
-    text-align: right;
-}
-.text-left{
-    text-align: left;
-}
-.icon{
-    width: 150px;
-}
-
-.logo-negro{
-    width: 130px;
-    height: 25px;
-}
-.logo-claro{
-    width: 130px;
-    height: 30px;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-}
-/* ----------- Propiedades de nav ----------- */
-.botonera{
-    background-color:transparent;    
-}
-
-    .botonera ul li{
-    margin-right: 20px;
-    display: flex;
-}
-
-    .botonera ul li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 0.9em;
-    }
-    
-.botonera-ul{
-    margin-right: 20px;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: flex-end;
-	align-content: stretch;
-
-        }
-        
-            
-.botonera a:hover {
-        color:rgb(137, 137, 137);
-}
-        
-
-/* ------- contenido main index.html -------- */
-
 #home-grid{
     display: grid;
     grid-template-columns: 100vw;
@@ -162,7 +22,7 @@ p{
 .tabla{
     grid-area: tabla;
     border-radius: 10px;
-    font-size: 0.9em;
+    font-size: $textp;
     line-height: 10px;
     padding: 0px;
     text-align: center;
@@ -173,12 +33,12 @@ p{
    
 }
 .boton-tickets{
-    background-color: red;
+    background-color: $btnColor;
     width:110px;
     height:25px;
     border-radius: 2px;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
+    color: $secondaryColor;
+    font-size: $textNormal;
     margin-top: 10px;
     
 }
@@ -197,7 +57,7 @@ p{
 .links a{
         text-decoration: none;
         font-size: 1em;
-        color: rgb(215, 189, 24);
+        color: $specialColor;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -208,11 +68,6 @@ p{
     margin-top:5px;
     display:flex;
     flex-direction: row;
-    
-    
-    
-
-
 }
 
 .ultima{
@@ -268,12 +123,12 @@ p{
        
     }
       .tabla .boton-tickets{
-        background-color: red;
+        background-color: $btnColor;
         width:200px;
         height:22px;
         border-radius: 2px;
-        color: rgb(255, 255, 255);
-        font-size: 0.9em;
+        color: $secondaryColor;
+        font-size: $textp;
         margin-top: 10px;
         
     }
@@ -282,7 +137,7 @@ p{
         grid-area: enlaces;
         margin-right: 10px;
         border-radius: 10px;
-        font-size: 1em;
+        font-size: $textNormal;
         line-height: 20px;
         padding: 0px;
         text-align: right;
@@ -299,7 +154,7 @@ p{
         .links a{
             text-decoration: none;
             font-size: 1.3em;
-            color: rgb(215, 189, 24);
+            color: $specialColor;
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-start;
@@ -331,7 +186,7 @@ p{
     .body-img{
         background-image: url(../img/NefertitiBG1200.webp);
         background-repeat: no-repeat;
-        background-color: black;
+        background-color: $mainColor;
         background-size: 100%;
     }
 
@@ -366,7 +221,7 @@ p{
     .links a{
             text-decoration: none;
             font-size: 1.3em;
-            color: rgb(215, 189, 24);
+            color:$specialColor;
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-start;
@@ -381,15 +236,12 @@ p{
     }
 }
 
-/* ----------- ends index.html ---------- */
-
-
-/*--------- historia.html ------------- */
+// Historia // 
 
 .box-historia{
    
     margin-top: 10px;
-    line-height: 1.9em;
+    line-height: $textLg;
     text-align: center;
     background-image: url(../img/historia.html/fuego-historia.png);
     background-position:center;
@@ -595,7 +447,7 @@ p{
     .box-historia{
         width: 100%;
         margin-top: 10px;
-        line-height: 1.9em;
+        line-height: $textLg;
         text-align: center;
         background-image: url(../img/historia.html/fuego-historia.png);
         background-position:center;
@@ -606,7 +458,6 @@ p{
     
 
 }
-
 
 /* --------------- musica.html ------------------ */
 
@@ -691,15 +542,18 @@ p{
     #gridDiscografia{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
         grid-template-areas: 
         "navegador"
         "discos"
         "enlacesMusica"
         "escuchanos"
+        "vacio"
         "pie";
     }
-
+    .vacio{
+        grid-area: vacio;
+    }
     .discos{
         grid-area: discos;
         display: flex;
@@ -839,199 +693,3 @@ footer-v{
 }
 
 
-/* ----------------- Tienda con grid -------------------*/
-
-    .container-p{
-        
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;           
-	
-	}
-        .container-p figure{
-           
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center; 
-            
-        }
-        .container-p figure p{
-            font-size: 0.9em;
-            line-height: 1em;
-            
-        
-            }
-        .container-p figure figcaption{
-            color: rgb(0, 0, 0);
-            font-size: 1.1em;
-            margin-top: 10px;
-            text-align: justify;
-            }
-        .container-p figure button{
-            border-radius: 2px;
-            border:solid;
-            background-color: black;
-            color: rgb(255, 255, 255);
-            padding:4px;
-        }
-
-
-/*------------TIENDA-------------------*/
-
-.btn-tienda{
-    border-radius: 2px;
-    border:solid;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    padding:4px;
-
-}
-
-.actions{
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
-}
-.actions button{
-    margin-top: 10px;
-    background-color: rgb(255, 4, 4);
-    color: white;
-    padding: 6px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 7px;
-
-
-}
-.actions input{
-    padding: 6px;
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(190, 190, 190);
-
-}
-
-.three{
-    margin-left: 20px;
-    margin-top: 10px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-}
-
-    .three a{
-    color: rgb(123, 123, 123);
-    font-size: 0.9em;
-    list-style: none;
-    text-decoration:none;
-    margin-bottom: 4px;
-    text-transform: lowercase;
-}
-    .three a:hover{
-        color: rgb(135, 53, 53);
-    }
-    .three span{
-    display:block;
-
-    color: black;
-    margin: 10px 0;
-    letter-spacing: 1px;
-    }
-    .three select{
-    color: rgb(255, 0, 0);
-    border: none;
-    background-color: white;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    }
-    .three li{
-    padding-left: 10px;
-    list-style: none;
-
-    }   
-
-
-
-.figure{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    .figure figcaption{
-        color: rgb(0, 0, 0);
-        font-size: 1.1em;
-        margin-top: 10px;
-        text-align: justify;   
-        }
-    .figure p{
-        font-size: 0.9em;
-        line-height: 1em;
-    }
-
-
-
-
-
-/* -------------- contacto.html ----------------- */
-
-.form-text{
-    font-size: 1.2em;
-    text-align: justify;
-    line-height: 2em;
-}
-.form-flex{
-    
-    margin-left: 20px;
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: flex-end;
-    
-}
-.message-box{
-    width: 600px;
-    text-align: center;
-}
-.last{
-   
-    font-size: small;
-    line-height: normal;
-    
-}
-.booking-box{
-    
-    height: 290px;
-    margin-right: 10px;
-    background-color: rgba(189, 189, 189, 0.358);
-    color:rgb(255, 255, 255);
-    padding: 10px 10px;
-    border: none;
-    border-radius: 10px;
-        
-}
-
-/* -------------- footer ------------- */
-
-
-
-footer{
-    background-color: rgb(0, 0, 0);
-    
-}   
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-    
-.footer-text{    
-    font-size: small;
-}

@@ -1,0 +1,92 @@
+.btn-tienda{
+    border-radius: 2px;
+    border:solid;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding:4px;
+
+}
+
+.actions{
+        background-color: $secondaryColor;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    form{
+        input{
+            padding: 6px;
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(190, 190, 190);
+
+        }
+        button{
+            margin-top: 10px;
+            background-color: $btnColor;
+            color: $secondaryColor;
+            padding: 6px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 7px;
+
+        }
+    }
+}
+
+
+.three{
+    margin-left: 20px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+        a{
+        color: rgb(123, 123, 123);
+        font-size: $textp;
+        list-style: none;
+        text-decoration:none;
+        margin-bottom: 4px;
+        text-transform: lowercase;
+        &:hover{
+            color:$hoverColor;
+            }
+        }
+        span{
+            display:block;
+            color: $mainColor;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+        select{
+            color: $btnColor;
+            border: none;
+            background-color: $secondaryColor;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        li{
+            padding-left: 10px;
+            list-style: none;
+        }      
+    }
+    .figure{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .figure figcaption{
+            color: $mainColor;
+            font-size: $textspecial;
+            margin-top: 10px;
+            text-align: justify;   
+            }
+        .figure p{
+            font-size: $textp;
+            line-height: 1em;
+        }
+    
+    
+    
+

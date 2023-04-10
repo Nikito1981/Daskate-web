@@ -2,5 +2,810 @@
   font-family: Friz Quadrata;
   src: url(../fonts/AnyConv.com__Friz\ Quadrata\ Regular.woff);
 }
+* {
+  font-family: Friz Quadrata;
+}
+
+.body-img {
+  background-image: url(../img/NefertitiBG360.webp);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  height: 130px;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.margin-top {
+  margin: 20px;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+p {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.icon {
+  width: 150px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: small;
+}
+
+.botonera {
+  background-color: transparent;
+}
+.botonera ul {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: stretch;
+}
+.botonera ul li {
+  margin-right: 20px;
+  display: flex;
+}
+.botonera ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.botonera ul li a:hover {
+  color: #fecd08;
+}
+
+.btn-tienda {
+  border-radius: 2px;
+  border: solid;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 4px;
+}
+
+.actions {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.actions form input {
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(190, 190, 190);
+}
+.actions form button {
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 7px;
+}
+
+.three {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.three a {
+  color: rgb(123, 123, 123);
+  font-size: 0.9em;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.three a:hover {
+  color: rgb(135, 53, 53);
+}
+.three span {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.three select {
+  color: red;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.three li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.figure {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figure figcaption {
+  color: black;
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.figure p {
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+.form-text {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 2em;
+}
+
+.form-flex {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-end;
+}
+
+.message-box {
+  width: 600px;
+  text-align: center;
+}
+
+.last {
+  font-size: small;
+  line-height: normal;
+}
+
+.booking-box {
+  height: 290px;
+  margin-right: 10px;
+  background-color: rgba(189, 189, 189, 0.358);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+#home-grid {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 10vh 40vh 25vh 25vh 10vh;
+  grid-template-areas: "primera" "empty" "tabla" "enlaces" "ultima";
+}
+
+.primera {
+  grid-area: primera;
+  margin-top: 5px;
+}
+
+.empty {
+  grid-area: empty;
+}
+
+.tabla {
+  grid-area: tabla;
+  border-radius: 10px;
+  font-size: 0.9em;
+  line-height: 10px;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-tickets {
+  background-color: red;
+  width: 110px;
+  height: 25px;
+  border-radius: 2px;
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.enlaces {
+  grid-area: enlaces;
+  border-radius: 10px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #fecd08;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.plataformas {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.ultima {
+  grid-area: ultima;
+  margin-top: 5px;
+}
+
+/* -------- 1er breakpoint --------- */
+@media (min-width: 768px) {
+  .body-img {
+    background-image: url(../img/NefertitiBG768.webp);
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+  }
+  #home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh 50vh 50vh 5vh;
+    grid-template-areas: "primera primera" "empty empty" "tabla enlaces" "ultima ultima";
+  }
+  .empty {
+    grid-area: empty;
+    height: 30vh;
+  }
+  .header {
+    grid-area: header;
+    margin-top: 5px;
+  }
+  .tabla {
+    grid-area: tabla;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 20px;
+    padding: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .tabla .boton-tickets {
+    background-color: red;
+    width: 200px;
+    height: 22px;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  .enlaces {
+    grid-area: enlaces;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    line-height: 20px;
+    padding: 0px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .links a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fecd08;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .plataformas {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .ultima {
+    grid-area: ultima;
+    margin-top: 5px;
+  }
+}
+/* ----------------- 2do breakpoint ------------------ */
+@media (min-width: 1200px) {
+  .body-img {
+    background-image: url(../img/NefertitiBG1200.webp);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 100%;
+  }
+  #home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh 70vh 50vh 5vh;
+    grid-template-areas: "primera primera" "empty empty" "tabla enlaces" "ultima ultima";
+  }
+  .enlaces {
+    grid-area: enlaces;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    line-height: 20px;
+    padding: 0px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .links a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fecd08;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .plataformas {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.box-historia {
+  margin-top: 10px;
+  line-height: 2em;
+  text-align: center;
+  background-image: url(../img/historia.html/fuego-historia.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+}
+
+.gridHistoria {
+  width: 90%;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 250px 480px 450px 450px 280px;
+  grid-template-areas: "texto" "lea" "euge" "tano" "ruso" "cache";
+}
+
+#texto {
+  grid-area: texto;
+}
+
+#lea {
+  grid-area: lea;
+  background-image: url(../img/historia.html/Lea350.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#euge {
+  grid-area: euge;
+  background-image: url(../img/historia.html/euge350px.webp);
+  margin-left: 5px;
+  background-size: 100%;
+  margin-top: 10px;
+}
+
+#tano {
+  grid-area: tano;
+  background-image: url(../img/historia.html/tano350.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#ruso {
+  grid-area: ruso;
+  background-image: url(../img/historia.html/ruso350.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#cache {
+  grid-area: cache;
+  background-image: url(../img/historia.html/cache1.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto {
+  width: 60%;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---------- 1er break point ------------ */
+@media (min-width: 768px) {
+  .gridHistoria {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 512px 900px 900px 800px 450px;
+    grid-template-areas: "texto" "lea" "euge" "ruso" "tano" "cache";
+  }
+  #texto {
+    grid-area: texto;
+  }
+  #lea {
+    grid-area: lea;
+    background-image: url(../img/historia.html/Lea768.webp);
+    background-image: 100%;
+  }
+  #euge {
+    grid-area: euge;
+    background-image: url(../img/historia.html/euge.jpg);
+  }
+  #tano {
+    grid-area: tano;
+    background-image: url(../img/historia.html/tano768.webp);
+  }
+  #ruso {
+    grid-area: ruso;
+    background-image: url(../img/historia.html/ruso768.webp);
+  }
+  #cache {
+    grid-area: cache;
+    background-image: url(../img/historia.html/cache768.webp);
+  }
+}
+/* -----------2do break point---------- */
+@media (min-width: 1200px) {
+  .gridHistoria {
+    width: 50%;
+    margin-left: 150px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto 300px 150px 250px;
+    grid-template-areas: "texto texto texto" "lea lea euge" "ruso tano euge" "ruso tano cache";
+  }
+  #lea {
+    grid-area: lea;
+    background-image: url(../img/historia.html/Lea.webp);
+    background-size: 100%;
+    size-adjust: 100%;
+  }
+  #euge {
+    grid-area: euge;
+    background-image: url(../img/historia.html/euge400.webp);
+    background-size: 100%;
+  }
+  #tano {
+    grid-area: tano;
+    background-image: url(../img/historia.html/tano2.jpg);
+    background-size: 100%;
+  }
+  #ruso {
+    grid-area: ruso;
+    background-image: url(../img/historia.html/ruso.webp);
+    background-size: 100%;
+  }
+  #cache {
+    grid-area: cache;
+    background-image: url(../img/historia.html/cache1.webp);
+    background-image: 100%;
+  }
+  .texto {
+    width: 90%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .box-historia {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 2em;
+    text-align: center;
+    background-image: url(../img/historia.html/fuego-historia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+  }
+}
+/* --------------- musica.html ------------------ */
+#gridDiscografia {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "navegador" "discos" "enlacesMusica" "escuchanos" "pie";
+}
+
+.navegador {
+  grid-area: navegador;
+}
+
+.discos {
+  grid-area: discos;
+}
+
+.discografia {
+  width: 100%;
+  margin: 10px auto 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tapa {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-size {
+  width: 300px;
+  height: 300px;
+}
+
+.enlacesMusica {
+  grid-area: enlacesMusica;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.escuchanos {
+  grid-area: escuchanos;
+}
+
+.pie {
+  grid-area: pie;
+}
+
+/* ------------ 1er breakpoint -------------- */
+@media (min-width: 768px) {
+  #gridDiscografia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navegador" "discos" "enlacesMusica" "escuchanos" "pie";
+  }
+}
+/* ------------- 2dp breakpoint ------------- */
+@media (min-width: 1200px) {
+  #gridDiscografia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
+    grid-template-areas: "navegador" "discos" "enlacesMusica" "escuchanos" "vacio" "pie";
+  }
+  .vacio {
+    grid-area: vacio;
+  }
+  .discos {
+    grid-area: discos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .tapa {
+    margin-top: 20px;
+  }
+  .img-size {
+    width: 300px;
+    height: 300px;
+  }
+  .enlacesMusica {
+    grid-area: enlacesMusica;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+/* ---------------- videos.hmtl -------------- */
+#gridVideos {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header-v" "main-v" "section-v" "footer-v";
+}
+
+.header-v {
+  grid-area: header-v;
+}
+
+.main-v {
+  grid-area: main-v;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-contenedor {
+  width: 90%;
+}
+
+.video-contenedor iframe {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.section-v {
+  grid-area: section-v;
+}
+
+.youtube-icon {
+  width: 100px;
+}
+
+.link-youtube {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+footer-v {
+  grid-area: footer-v;
+}
+
+/* ----------------- 1er breakpoint ---------------- */
+@media (min-width: 768px) {
+  #gridVideos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header-v" "main-v" "section-v" "footer-v";
+  }
+  .video-contenedor iframe {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+/* ----------------- 2do breakpoint ----------------- */
+@media (min-width: 400px) {
+  #gridVideos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header-v" "main-v" "section-v" "footer-v";
+  }
+  .video-contenedor iframe {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+.icon-size {
+  width: 30px;
+  height: 30px;
+}
 
 /*# sourceMappingURL=main.css.map */
