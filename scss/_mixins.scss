@@ -1,0 +1,13 @@
+//extends
+
+
+// mixins 
+
+@mixin textos ($size, $line, $color){
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    font-family: $mainFont;
+}
+
+

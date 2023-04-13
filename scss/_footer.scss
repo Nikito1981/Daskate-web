@@ -1,0 +1,13 @@
+footer{
+    background-color: $mainColor;
+    
+}   
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: $fullWidth;
+}
+    
+.footer-text{    
+    font-size: $textsm;
+}

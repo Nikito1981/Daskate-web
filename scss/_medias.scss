@@ -22,7 +22,7 @@
 .tabla{
     grid-area: tabla;
     border-radius: 10px;
-    font-size: $textp;
+    font-size: 0.9em;
     line-height: 10px;
     padding: 0px;
     text-align: center;
@@ -33,12 +33,12 @@
    
 }
 .boton-tickets{
-    background-color: $btnColor;
+    background-color: red;
     width:110px;
     height:25px;
     border-radius: 2px;
-    color: $secondaryColor;
-    font-size: $textNormal;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
     margin-top: 10px;
     
 }
@@ -57,7 +57,7 @@
 .links a{
         text-decoration: none;
         font-size: 1em;
-        color: $specialColor;
+        color: rgb(215, 189, 24);
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -68,6 +68,11 @@
     margin-top:5px;
     display:flex;
     flex-direction: row;
+    
+    
+    
+
+
 }
 
 .ultima{
@@ -128,7 +133,7 @@
         height:22px;
         border-radius: 2px;
         color: $secondaryColor;
-        font-size: $textp;
+        font-size: 0.9em;
         margin-top: 10px;
         
     }
@@ -137,7 +142,7 @@
         grid-area: enlaces;
         margin-right: 10px;
         border-radius: 10px;
-        font-size: $textNormal;
+        font-size: 1em;
         line-height: 20px;
         padding: 0px;
         text-align: right;
@@ -186,7 +191,7 @@
     .body-img{
         background-image: url(../img/NefertitiBG1200.webp);
         background-repeat: no-repeat;
-        background-color: $mainColor;
+        background-color: black;
         background-size: 100%;
     }
 
@@ -221,7 +226,7 @@
     .links a{
             text-decoration: none;
             font-size: 1.3em;
-            color:$specialColor;
+            color: rgb(215, 189, 24);
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-start;
@@ -239,14 +244,12 @@
 // Historia // 
 
 .box-historia{
-   
     margin-top: 10px;
-    line-height: $textLg;
+    line-height: 1.9em;
     text-align: center;
     background-image: url(../img/historia.html/fuego-historia.png);
     background-position:center;
     background-repeat:no-repeat;
-    background-size: 100%;
     background-attachment:scroll;
    }
    .gridHistoria{
@@ -268,6 +271,14 @@
    
 #texto{
     grid-area: texto;
+    width: 60%;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
 }
 
 #lea{
@@ -323,14 +334,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.texto{
-    width: 60%;
-    margin-left: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    }
+
 
 /* ---------- 1er break point ------------ */
 @media (min-width:768px){
@@ -348,7 +352,7 @@
         "ruso"
         "tano"
         "cache";
-    }
+    
     #texto{
         grid-area: texto;
     }
@@ -379,6 +383,7 @@
         background-image: url(../img/historia.html/cache768.webp);
         
        
+        }
     }
 }
     
@@ -398,51 +403,53 @@
         "lea lea euge"
         "ruso tano euge"
         "ruso tano cache";
-    }
     
-    #lea{
-        grid-area: lea;
-        background-image: url(../img/historia.html/Lea.webp);
-        background-size: 100%;
-        size-adjust: 100%;
-    
-    
-    }
-    #euge{
-        grid-area: euge;
-        background-image: url(../img/historia.html/euge400.webp);
-        background-size: 100%;
+        }
+        #lea{
+            grid-area: lea;
+            background-image: url(../img/historia.html/Lea.webp);
+            background-size: 100%;
+            size-adjust: 100%;
     
     
-    }
-    #tano{
-        grid-area: tano;
-        background-image: url(../img/historia.html/tano2.jpg);
-        background-size: 100%;
+        }
+        #euge{
+            grid-area: euge;
+            background-image: url(../img/historia.html/euge400.webp);
+            background-size: 100%;
+    
+    
+        }
+        #tano{
+            grid-area: tano;
+            background-image: url(../img/historia.html/tano2.jpg);
+            background-size: 100%;
         
-        ;
-    }
-    #ruso{
-        grid-area: ruso;
-        background-image: url(../img/historia.html/ruso.webp);
-        background-size: 100%;
+        
+        }
+        #ruso{
+            grid-area: ruso;
+            background-image: url(../img/historia.html/ruso.webp);
+            background-size: 100%;
     
-    }
-    #cache{
-        grid-area: cache;
-        background-image: url(../img/historia.html/cache1.webp);
-        background-image: 100%;
+        }
+        #cache{
+            grid-area: cache;
+            background-image: url(../img/historia.html/cache1.webp);
+            background-image: 100%;
        
-    }
-    .texto{
-        width: 90%;
-        margin-left: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        }
+        #texto{
+            width: 90%;
+            margin-left: 50px;
+            color: $secondaryColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         
         
+        }
     }
     .box-historia{
         width: 100%;
@@ -457,7 +464,7 @@
        }
     
 
-}
+
 
 /* --------------- musica.html ------------------ */
 
@@ -472,24 +479,25 @@
     "escuchanos"
     "pie";
 }
-.navegador{
-    grid-area: navegador;
-   
-}
 
-.discos{
-    grid-area: discos;
+    .navegador{
+        grid-area: navegador;
+   
+    }
+
+    .discos{
+        grid-area: discos;
     
 	
-}
-    .discografia{
-        width: 100%;
-        margin: 10px auto 10px auto;
-        display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: center;
-	    }
+    }
+        .discografia{
+            width: 100%;
+            margin: 10px auto 10px auto;
+            display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	        }
     .tapa{
         margin-top: 20px;
         display: flex;

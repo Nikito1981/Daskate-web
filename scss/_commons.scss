@@ -5,15 +5,12 @@
 .body-img{ 
     background-image: url(../img/NefertitiBG360.webp);
     background-repeat: no-repeat;
-    background-color: $mainColor;
     background-size: 100%;
     }
     
-body{
-    background-color: $mainColor;
-}
+
 .header{
-    width: 100%;
+    width: $fullWidth;
     height: 130px;
 }
 .background-white{
@@ -83,16 +80,4 @@ p{
     
 }
 
-footer{
-    background-color: $mainColor;
-    
-}   
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: $fullWidth;
-}
-    
-.footer-text{    
-    font-size: small;
-}
+

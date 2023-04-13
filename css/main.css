@@ -9,12 +9,7 @@
 .body-img {
   background-image: url(../img/NefertitiBG360.webp);
   background-repeat: no-repeat;
-  background-color: black;
   background-size: 100%;
-}
-
-body {
-  background-color: black;
 }
 
 .header {
@@ -104,24 +99,10 @@ p {
   width: 100%;
 }
 
-footer {
-  background-color: black;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-text {
-  font-size: small;
-}
-
-.botonera {
+.botonera, .botoneraStore {
   background-color: transparent;
 }
-.botonera ul {
+.botonera ul, .botoneraStore ul {
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -130,24 +111,46 @@ footer {
   align-items: flex-end;
   align-content: stretch;
 }
-.botonera ul li {
+.botonera ul li, .botoneraStore ul li {
   margin-right: 20px;
   display: flex;
 }
-.botonera ul li a {
+.botonera ul li a, .botoneraStore ul li a {
   color: white;
   text-decoration: none;
   font-size: 0.9em;
 }
-.botonera ul li a:hover {
-  color: #fecd08;
+.botonera ul li a:hover, .botoneraStore ul li a:hover {
+  color: rgb(137, 137, 137);
+}
+
+.botoneraStore ul {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: stretch;
+}
+.botoneraStore ul li {
+  margin-right: 20px;
+  display: flex;
+}
+.botoneraStore ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.botoneraStore ul li a:hover {
+  color: rgb(137, 137, 137);
 }
 
 .btn-tienda {
   border-radius: 2px;
   border: solid;
   background-color: black;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 4px;
 }
 
@@ -157,13 +160,14 @@ footer {
   justify-content: flex-end;
   align-items: center;
 }
-.actions form input {
+
+.form input {
   padding: 6px;
   border: none;
   border-radius: 3px;
   background-color: rgb(190, 190, 190);
 }
-.actions form button {
+.form button {
   margin-top: 10px;
   background-color: red;
   color: white;
@@ -216,15 +220,12 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-
 .figure figcaption {
   color: black;
   font-size: 1.2em;
   margin-top: 10px;
-  text-align: justify;
 }
-
-.figure p {
+.figure figcaption p {
   font-size: 0.9em;
   line-height: 1em;
 }
@@ -299,7 +300,7 @@ footer {
   width: 110px;
   height: 25px;
   border-radius: 2px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1em;
   margin-top: 10px;
 }
@@ -317,7 +318,7 @@ footer {
 .links a {
   text-decoration: none;
   font-size: 1em;
-  color: #fecd08;
+  color: rgb(215, 189, 24);
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -442,7 +443,7 @@ footer {
   .links a {
     text-decoration: none;
     font-size: 1.3em;
-    color: #fecd08;
+    color: rgb(215, 189, 24);
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -457,12 +458,11 @@ footer {
 }
 .box-historia {
   margin-top: 10px;
-  line-height: 2em;
+  line-height: 1.9em;
   text-align: center;
   background-image: url(../img/historia.html/fuego-historia.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-attachment: scroll;
 }
 
@@ -477,6 +477,12 @@ footer {
 
 #texto {
   grid-area: texto;
+  width: 60%;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #lea {
@@ -529,15 +535,6 @@ footer {
   justify-content: center;
 }
 
-.texto {
-  width: 60%;
-  margin-left: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 /* ---------- 1er break point ------------ */
 @media (min-width: 768px) {
   .gridHistoria {
@@ -549,27 +546,27 @@ footer {
     grid-template-rows: auto 512px 900px 900px 800px 450px;
     grid-template-areas: "texto" "lea" "euge" "ruso" "tano" "cache";
   }
-  #texto {
+  .gridHistoria #texto {
     grid-area: texto;
   }
-  #lea {
+  .gridHistoria #lea {
     grid-area: lea;
     background-image: url(../img/historia.html/Lea768.webp);
     background-image: 100%;
   }
-  #euge {
+  .gridHistoria #euge {
     grid-area: euge;
     background-image: url(../img/historia.html/euge.jpg);
   }
-  #tano {
+  .gridHistoria #tano {
     grid-area: tano;
     background-image: url(../img/historia.html/tano768.webp);
   }
-  #ruso {
+  .gridHistoria #ruso {
     grid-area: ruso;
     background-image: url(../img/historia.html/ruso768.webp);
   }
-  #cache {
+  .gridHistoria #cache {
     grid-area: cache;
     background-image: url(../img/historia.html/cache768.webp);
   }
@@ -611,26 +608,28 @@ footer {
     background-image: url(../img/historia.html/cache1.webp);
     background-image: 100%;
   }
-  .texto {
+  #texto {
     width: 90%;
     margin-left: 50px;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .box-historia {
-    width: 100%;
-    margin-top: 10px;
-    line-height: 2em;
-    text-align: center;
-    background-image: url(../img/historia.html/fuego-historia.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: scroll;
-  }
 }
+.box-historia {
+  width: 100%;
+  margin-top: 10px;
+  line-height: 2em;
+  text-align: center;
+  background-image: url(../img/historia.html/fuego-historia.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+}
+
 /* --------------- musica.html ------------------ */
 #gridDiscografia {
   display: grid;
@@ -806,6 +805,20 @@ footer-v {
 .icon-size {
   width: 30px;
   height: 30px;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: small;
 }
 
 /*# sourceMappingURL=main.css.map */

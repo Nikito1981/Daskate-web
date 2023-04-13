@@ -18,9 +18,43 @@
                 text-decoration: none;
                 font-size: $textp;
                 &:hover{
-                    color:$specialColor;
+                    color:$keycolor;
+                
                 }
+
             }
         }
     }
 }
+
+.botoneraStore{
+    @extend .botonera;
+    ul{
+        margin-right: 20px;
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: space-between;
+	    align-items: flex-end;
+	    align-content: stretch;
+    
+        li{
+            margin-right: 20px;
+            display: flex;
+            
+            a{
+                color: $mainColor;
+                text-decoration: none;
+                font-size: $textp;
+                &:hover{
+                    color:$keycolor;
+                
+                }
+
+            }
+        }
+    }
+}
+
+
+
