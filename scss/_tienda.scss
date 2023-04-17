@@ -81,7 +81,7 @@
     @include flexArticulos (column, center)
     }
     .figure figcaption{
-        color: rgb(0, 0, 0);
+        color: $mainColor;
         font-size: $textspecial;
         margin-top: $marginTop;
         text-align: justify;   
