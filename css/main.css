@@ -2,6 +2,21 @@
   font-family: Friz Quadrata;
   src: url(../fonts/AnyConv.com__Friz\ Quadrata\ Regular.woff);
 }
+.box-gral, .box-white {
+  width: 100%;
+  padding: 10px 60px;
+  margin: auto;
+}
+
+.box-white {
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #000000;
+  width: 100%;
+}
+
 * {
   font-family: Friz Quadrata;
 }
@@ -10,6 +25,7 @@
   background-image: url(../img/NefertitiBG360.webp);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #000000;
 }
 
 .header {
@@ -17,20 +33,24 @@
   height: 130px;
 }
 
+.background-black {
+  background-color: #000000;
+}
+
 .background-white {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .text-white {
-  color: white;
+  color: #ffffff;
 }
 
 .text-red {
-  color: red;
+  color: #ff0000;
 }
 
 .text-black {
-  color: black;
+  color: #000000;
 }
 
 .text-center {
@@ -99,10 +119,10 @@ p {
   width: 100%;
 }
 
-.botonera, .botoneraStore {
+.botonera {
   background-color: transparent;
 }
-.botonera ul, .botoneraStore ul {
+.botonera ul {
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -111,70 +131,49 @@ p {
   align-items: flex-end;
   align-content: stretch;
 }
-.botonera ul li, .botoneraStore ul li {
+.botonera ul li {
   margin-right: 20px;
   display: flex;
 }
-.botonera ul li a, .botoneraStore ul li a {
-  color: white;
+.botonera ul li a {
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.9em;
 }
-.botonera ul li a:hover, .botoneraStore ul li a:hover {
-  color: rgb(137, 137, 137);
-}
-
-.botoneraStore ul {
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  align-content: stretch;
-}
-.botoneraStore ul li {
-  margin-right: 20px;
-  display: flex;
-}
-.botoneraStore ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-.botoneraStore ul li a:hover {
-  color: rgb(137, 137, 137);
+.botonera ul li a:hover {
+  color: #898989;
 }
 
 .btn-tienda {
   border-radius: 2px;
   border: solid;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   padding: 4px;
 }
 
 .actions {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.form input {
-  padding: 6px;
-  border: none;
-  border-radius: 3px;
-  background-color: rgb(190, 190, 190);
-}
-.form button {
+.actions button {
   margin-top: 10px;
-  background-color: red;
-  color: white;
+  background-color: #ff0000;
+  color: #ffffff;
   padding: 6px;
   border: none;
   border-radius: 3px;
   margin-right: 7px;
+}
+
+.actions input {
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  background-color: #bebebe;
 }
 
 .three {
@@ -185,30 +184,35 @@ p {
   justify-content: center;
   align-items: flex-start;
 }
+
 .three a {
-  color: rgb(123, 123, 123);
+  color: #898989;
   font-size: 0.9em;
   list-style: none;
   text-decoration: none;
   margin-bottom: 4px;
   text-transform: lowercase;
 }
+
 .three a:hover {
   color: rgb(135, 53, 53);
 }
+
 .three span {
   display: block;
-  color: black;
-  margin: 10px 0;
+  color: #000000;
+  margin: 10px;
   letter-spacing: 1px;
 }
+
 .three select {
-  color: red;
+  color: #ff0000;
   border: none;
-  background-color: white;
+  background-color: #ffffff;
   margin-bottom: 10px;
   font-size: 1.2em;
 }
+
 .three li {
   padding-left: 10px;
   list-style: none;
@@ -220,12 +224,15 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
 .figure figcaption {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.2em;
   margin-top: 10px;
+  text-align: justify;
 }
-.figure figcaption p {
+
+.figure p {
   font-size: 0.9em;
   line-height: 1em;
 }
@@ -259,8 +266,8 @@ p {
 .booking-box {
   height: 290px;
   margin-right: 10px;
-  background-color: rgba(189, 189, 189, 0.358);
-  color: white;
+  background-color: rgba(189, 189, 189, 0.3568627451);
+  color: #ffffff;
   padding: 10px 10px;
   border: none;
   border-radius: 10px;
@@ -296,11 +303,11 @@ p {
 }
 
 .boton-tickets {
-  background-color: red;
+  background-color: #ff0000;
   width: 110px;
   height: 25px;
   border-radius: 2px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 1em;
   margin-top: 10px;
 }
@@ -372,11 +379,11 @@ p {
     align-items: flex-start;
   }
   .tabla .boton-tickets {
-    background-color: red;
+    background-color: #ff0000;
     width: 200px;
     height: 22px;
     border-radius: 2px;
-    color: white;
+    color: #ffffff;
     font-size: 0.9em;
     margin-top: 10px;
   }
@@ -466,6 +473,19 @@ p {
   background-attachment: scroll;
 }
 
+.box-historia {
+  width: 100%;
+  margin-top: 10px;
+  color: #ffffff;
+  line-height: 2em;
+  text-align: center;
+  background-image: url(../img/historia.html/fuego-historia.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+}
+
 .gridHistoria {
   width: 90%;
   margin-left: 20px;
@@ -477,8 +497,9 @@ p {
 
 #texto {
   grid-area: texto;
-  width: 60%;
-  margin-left: 250px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -548,6 +569,8 @@ p {
   }
   .gridHistoria #texto {
     grid-area: texto;
+    margin-left: 10px;
+    margin-top: 50px;
   }
   .gridHistoria #lea {
     grid-area: lea;
@@ -608,28 +631,26 @@ p {
     background-image: url(../img/historia.html/cache1.webp);
     background-image: 100%;
   }
-  #texto {
+  .texto {
     width: 90%;
     margin-left: 50px;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+  .box-historia {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 2em;
+    text-align: center;
+    background-image: url(../img/historia.html/fuego-historia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+  }
 }
-.box-historia {
-  width: 100%;
-  margin-top: 10px;
-  line-height: 2em;
-  text-align: center;
-  background-image: url(../img/historia.html/fuego-historia.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: scroll;
-}
-
 /* --------------- musica.html ------------------ */
 #gridDiscografia {
   display: grid;
@@ -808,12 +829,7 @@ footer-v {
 }
 
 footer {
-  background-color: black;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
+  background-color: #000000;
   width: 100%;
 }
 

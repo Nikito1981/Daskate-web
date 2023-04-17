@@ -22,7 +22,7 @@
 .tabla{
     grid-area: tabla;
     border-radius: 10px;
-    font-size: 0.9em;
+    font-size: $textp;
     line-height: 10px;
     padding: 0px;
     text-align: center;
@@ -33,14 +33,22 @@
    
 }
 .boton-tickets{
-    background-color: red;
+    background-color: $btnColor;
     width:110px;
     height:25px;
-    border-radius: 2px;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    margin-top: 10px;
     
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: $textp;
+    margin-top: $marginTop;
+    a{
+        color: $secondaryColor;
+       
+                &:hover{
+                    color:$keycolor;
+    }
+    
+}
 }
 
 .enlaces{
@@ -133,8 +141,8 @@
         height:22px;
         border-radius: 2px;
         color: $secondaryColor;
-        font-size: 0.9em;
-        margin-top: 10px;
+        font-size: $textp;
+        margin-top: $marginTop;
         
     }
     
@@ -158,7 +166,7 @@
     
         .links a{
             text-decoration: none;
-            font-size: 1.3em;
+            font-size: $textspecial;
             color: $specialColor;
             display: flex;
             flex-direction: row-reverse;
@@ -211,7 +219,7 @@
         grid-area: enlaces;
         margin-right: 20px;
         border-radius: 10px;
-        font-size: 1em;
+        font-size: $textNormal;
         line-height: 20px;
         padding: 0px;
         text-align: right;
@@ -225,7 +233,7 @@
     
     .links a{
             text-decoration: none;
-            font-size: 1.3em;
+            font-size: $textMd;
             color: rgb(215, 189, 24);
             display: flex;
             flex-direction: row-reverse;
@@ -244,7 +252,7 @@
 // Historia // 
 
 .box-historia{
-    margin-top: 10px;
+    margin-top: $marginTop;
     line-height: 1.9em;
     text-align: center;
     background-image: url(../img/historia.html/fuego-historia.png);
@@ -252,11 +260,23 @@
     background-repeat:no-repeat;
     background-attachment:scroll;
    }
-   .gridHistoria{
+
+   .box-historia{
+    width: 100%;
+    margin-top: 10px;
+    @include textos ($secondaryColor,$textLg,);
+    text-align: center;
+    background-image: url(../img/historia.html/fuego-historia.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-attachment:scroll;
+   }
+
+.gridHistoria{
     width: 90%;
     margin-left: 20px;    
-    display: grid;
-    
+    display: grid; 
     grid-template-columns: 1fr;
     grid-template-rows: auto 250px 480px 450px 450px 280px;
     grid-template-areas:
@@ -271,8 +291,9 @@
    
 #texto{
     grid-area: texto;
-    width: 60%;
-    margin-left: 250px;
+    width: 100%;
+    margin-top: $marginTop;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,6 +376,8 @@
     
     #texto{
         grid-area: texto;
+        margin-left: 10px;
+        margin-top: 50px;
     }
     
     #lea{
@@ -391,7 +414,7 @@
 
 @media (min-width:1200px){
     .gridHistoria{
-        width: 50%;
+        width: $halfWidth;
         margin-left: 150px;
         margin-top: 20px;
         display: grid;
@@ -403,57 +426,55 @@
         "lea lea euge"
         "ruso tano euge"
         "ruso tano cache";
+    }
     
-        }
-        #lea{
-            grid-area: lea;
-            background-image: url(../img/historia.html/Lea.webp);
-            background-size: 100%;
-            size-adjust: 100%;
-    
-    
-        }
-        #euge{
-            grid-area: euge;
-            background-image: url(../img/historia.html/euge400.webp);
-            background-size: 100%;
+    #lea{
+        grid-area: lea;
+        background-image: url(../img/historia.html/Lea.webp);
+        background-size: 100%;
+        size-adjust: 100%;
     
     
-        }
-        #tano{
-            grid-area: tano;
-            background-image: url(../img/historia.html/tano2.jpg);
-            background-size: 100%;
+    }
+    #euge{
+        grid-area: euge;
+        background-image: url(../img/historia.html/euge400.webp);
+        background-size: 100%;
+    
+    
+    }
+    #tano{
+        grid-area: tano;
+        background-image: url(../img/historia.html/tano2.jpg);
+        background-size: 100%;
         
-        
-        }
-        #ruso{
-            grid-area: ruso;
-            background-image: url(../img/historia.html/ruso.webp);
-            background-size: 100%;
+        ;
+    }
+    #ruso{
+        grid-area: ruso;
+        background-image: url(../img/historia.html/ruso.webp);
+        background-size: 100%;
     
-        }
-        #cache{
-            grid-area: cache;
-            background-image: url(../img/historia.html/cache1.webp);
-            background-image: 100%;
+    }
+    #cache{
+        grid-area: cache;
+        background-image: url(../img/historia.html/cache1.webp);
+        background-image: 100%;
        
-        }
-        #texto{
-            width: 90%;
-            margin-left: 50px;
-            color: $secondaryColor;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+    }
+    .texto{
+        width: 90%;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         
         
-        }
     }
     .box-historia{
-        width: 100%;
-        margin-top: 10px;
+        width: $fullWidth;
+        margin-top: $marginTop;
         line-height: $textLg;
         text-align: center;
         background-image: url(../img/historia.html/fuego-historia.png);
@@ -464,6 +485,7 @@
        }
     
 
+}
 
 
 /* --------------- musica.html ------------------ */
@@ -491,7 +513,7 @@
 	
     }
         .discografia{
-            width: 100%;
+            width: $fullWidth;
             margin: 10px auto 10px auto;
             display: flex;
 	        flex-direction: column;

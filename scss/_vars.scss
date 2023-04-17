@@ -1,13 +1,13 @@
 // colores
 
-$mainColor: black;
-$secondaryColor:white;
-$btnColor:red;
+$mainColor: #000000;
+$secondaryColor:#ffffff;
+$btnColor:#ff0000;
 $specialColor: #fecd08;
-$keycolor: rgb(137, 137, 137);
-$hoverColor:rgb(135, 53, 53);
-$bookingBoxColor:rgba(189, 189, 189, 0.358);
-$inputColor:rgb(190, 190, 190); 
+$keycolor: #898989;
+$hoverColor:#873535;
+$bookingBoxColor:#bdbdbd5b;
+$inputColor:#bebebe; 
 
 //fonts//
 
@@ -21,7 +21,9 @@ $textNormal:1em;
 
 //sizing//
 $fullWidth: 100%;
+$halfWidth:50%;
 $iconSize: 150px;
+$bgFull:100%;
 
 // margenes //
 $marginTop: 10px;

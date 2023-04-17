@@ -1,13 +1,39 @@
 //extends
 
+.box-gral{
+    width: $fullWidth;
+    padding: 10px 60px;
+    
+    
+}
+.box-white{
+    @extend .box-gral;
+    background-color: $secondaryColor;
+}
+
+
+
+
+
 
 // mixins 
 
-@mixin textos ($size, $line, $color){
-    font-size: $size;
+@mixin textos ($line, $color){
+    
     line-height: $line;
     color: $color;
     font-family: $mainFont;
 }
+
+@mixin flexArticulos ($direction, $align, $color){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    
+}
+
+
+
+    
 
 

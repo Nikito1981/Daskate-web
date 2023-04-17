@@ -1,12 +1,10 @@
 footer{
     background-color: $mainColor;
+    font-size: $textsm;
+
     
 }   
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: $fullWidth;
-}
+
     
 .footer-text{    
     font-size: $textsm;

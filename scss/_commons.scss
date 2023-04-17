@@ -6,12 +6,17 @@
     background-image: url(../img/NefertitiBG360.webp);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: $mainColor;
     }
     
 
 .header{
     width: $fullWidth;
     height: 130px;
+}
+
+.background-black{
+    background-color: $mainColor;
 }
 .background-white{
     background-color: $secondaryColor;
@@ -46,6 +51,9 @@
 }
 .margin-auto{
     margin:auto;
+}
+.text-decoration{
+    text-decoration: none;
 }
 
 p{

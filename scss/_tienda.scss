@@ -8,33 +8,30 @@
 }
 
 .actions{
-        background-color: $secondaryColor;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-}
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     
-.form{
-        input{
-            padding: 6px;
-            border: none;
-            border-radius: 3px;
-            background-color: $inputColor;
-
-        }
-        button{
-            margin-top: $marginTop;
-            background-color: $btnColor;
-            color: $secondaryColor;
-            padding: 6px;
-            border: none;
-            border-radius: 3px;
-            margin-right: 7px;
-
-        }
-    }
+}
+.actions button{
+    margin-top: $marginTop;
+    background-color: $btnColor;
+    color:$secondaryColor;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 7px;
 
 
+}
+.actions input{
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    background-color: $inputColor;
+
+}
 
 .three{
     margin-left: 20px;
@@ -43,51 +40,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-        a{
-        color: rgb(123, 123, 123);
-        font-size: $textp;
-        list-style: none;
-        text-decoration:none;
-        margin-bottom: 4px;
-        text-transform: lowercase;
-        &:hover{
-            color:$hoverColor;
-            }
-        }
-        span{
-            display:block;
-            color: $mainColor;
-            margin: 10px 0;
-            letter-spacing: 1px;
-        }
-        select{
-            color: $btnColor;
-            border: none;
-            background-color: $secondaryColor;
-            margin-bottom: 10px;
-            font-size: $textspecial;
-        }
-        li{
-            padding-left: 10px;
-            list-style: none;
-        }      
-    }
-.figure{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-
-        figcaption{
-            color: $mainColor;
-            font-size: $textspecial;
-            margin-top: $marginTop;
-           
-                p{
-                    font-size: $textp;
-                    line-height: 1em;
-                }
-            }            
-        }    
     
+}
+
+    .three a{
+    color: $keycolor;
+    font-size: $textp;
+    list-style: none;
+    text-decoration:none;
+    margin-bottom: 4px;
+    text-transform: lowercase;
+}
+    .three a:hover{
+        color: rgb(135, 53, 53);
+    }
+    .three span{
+    display:block;
+
+    color: $mainColor;
+    margin: $marginTop;
+    letter-spacing: 1px;
+    }
+    .three select{
+    color: $btnColor;
+    border: none;
+    background-color: $secondaryColor;
+    margin-bottom: 10px;
+    font-size: $textspecial;
+    }
+    .three li{
+    padding-left: 10px;
+    list-style: none;
+
+    }   
+
+
+
+.figure{
+    margin-top: 20px;
+    @include flexArticulos (column, center)
+    }
+    .figure figcaption{
+        color: rgb(0, 0, 0);
+        font-size: $textspecial;
+        margin-top: $marginTop;
+        text-align: justify;   
+        }
+    .figure p{
+        font-size: $textp;
+        line-height: 1em;
+    }
+
 
