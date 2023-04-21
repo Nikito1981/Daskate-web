@@ -1,11 +1,3 @@
-.btn-tienda{
-    border-radius: 2px;
-    border:solid;
-    background-color: $mainColor;
-    color: $secondaryColor;
-    padding:4px;
-
-}
 
 .actions{
     background-color: $secondaryColor;
@@ -55,12 +47,11 @@
         color: rgb(135, 53, 53);
     }
     .three span{
-    display:block;
-
-    color: $mainColor;
-    margin: $marginTop;
-    letter-spacing: 1px;
-    }
+        display:block;
+        color: $mainColor;
+        margin: $marginTop;
+        letter-spacing: 1px;
+        }
     .three select{
     color: $btnColor;
     border: none;
@@ -90,5 +81,13 @@
         font-size: $textp;
         line-height: 1em;
     }
-
+    .btn-tienda{
+        border-radius: 2px;
+        border:solid;
+        background-color: $mainColor;
+        color: $secondaryColor;
+        padding:4px;
+    
+    }
+    
 

@@ -8,85 +8,70 @@
     "tabla"
     "enlaces"
     "ultima";
-}
 
-.primera{
-    grid-area: primera;
-    margin-top: 5px;
+
+    .primera{
+        grid-area: primera;
+        margin-top: 5px;
     
-}
-.empty{
-    grid-area: empty;
-    
-}
-.tabla{
-    grid-area: tabla;
-    border-radius: 10px;
-    font-size: $textp;
-    line-height: 10px;
-    padding: 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-.boton-tickets{
-    background-color: $btnColor;
-    width:110px;
-    height:25px;
-    
-    text-decoration: none;
-    border-radius: 2px;
-    font-size: $textp;
-    margin-top: $marginTop;
-    a{
-        color: $secondaryColor;
-       
-                &:hover{
-                    color:$keycolor;
     }
+    .empty{
+        grid-area: empty;
     
-}
-}
-
-.enlaces{
-    grid-area: enlaces;
-    border-radius: 10px;
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        
-}
-
-.links a{
+    }
+    .tabla{
+        grid-area: tabla;
+        border-radius: 10px;
+        font-size: $textp;
+        line-height: 10px;
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton-tickets{
+        background-color: $btnColor;
+        width:$fullWidth;
+        height:25px;    
         text-decoration: none;
-        font-size: 1em;
-        color: rgb(215, 189, 24);
+        border-radius: 2px;
+        font-size: $textp;
+        margin-top: $marginTop;
+}
+    
+    .enlaces{
+        grid-area: enlaces;
+        border-radius: 10px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .links a{
+        text-decoration: none;
+        font-size: $textNormal;
+        color: $specialColor;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
     } 
 
-.plataformas{
-    margin-top:5px;
-    display:flex;
-    flex-direction: row;
-    
-    
-    
+    .plataformas{
+        margin-top:5px;
+        display:flex;
+        flex-direction: row;
+    }
 
-
-}
-
-.ultima{
-    grid-area: ultima;
-    margin-top: 5px;
-    
+    .ultima{
+        grid-area: ultima;
+        margin-top: 5px;
+    }
 }
 
 
@@ -286,69 +271,59 @@
     "tano"
     "ruso"
     "cache";
-   }
+   
 
    
-#texto{
-    grid-area: texto;
-    width: 100%;
-    margin-top: $marginTop;
-    margin-left: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-    
-}
+    #texto{
+        grid-area: texto;
+        width: 100%;
+        margin-top: $marginTop;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;    
+    }
 
-#lea{
-    grid-area: lea;
-    background-image: url(../img/historia.html/Lea350.webp);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
-    
-}
-#euge{
-    grid-area: euge;
-    background-image: url(../img/historia.html/euge350px.webp);
-    margin-left: 5px;
-    background-size: 100%;
-    margin-top: 10px;
-    
-
-
-}
-#tano{
-    grid-area: tano;
-    background-image: url(../img/historia.html/tano350.webp); 
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
-    
-    
-}
-#ruso{
-    grid-area: ruso;
-    background-image: url(../img/historia.html/ruso350.webp);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
-    
-
-}
-#cache{
-    grid-area: cache;
-    background-image: url(../img/historia.html/cache1.webp);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-left: 5px;
-    margin-top: 10px;
-    
+    #lea{
+        grid-area: lea;
+        background-image: url(../img/historia.html/Lea350.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    #euge{
+        grid-area: euge;
+        background-image: url(../img/historia.html/euge350px.webp);
+        margin-left: 5px;
+        background-size: 100%;
+        margin-top: 10px;
+    }
+    #tano{
+        grid-area: tano;
+        background-image: url(../img/historia.html/tano350.webp); 
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    #ruso{
+        grid-area: ruso;
+        background-image: url(../img/historia.html/ruso350.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    #cache{
+        grid-area: cache;
+        background-image: url(../img/historia.html/cache1.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
 }
 .historia{
     display: flex;
@@ -500,7 +475,7 @@
     "enlacesMusica"
     "escuchanos"
     "pie";
-}
+
 
     .navegador{
         grid-area: navegador;
@@ -531,23 +506,24 @@
         height: 300px;
     }
 
-.enlacesMusica{
-    grid-area: enlacesMusica;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    .enlacesMusica{
+        grid-area: enlacesMusica;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     
-}
+    }
 
-.escuchanos{
-    grid-area: escuchanos;
-}
+    .escuchanos{
+        grid-area: escuchanos;
+    }
 
-.pie{
-    grid-area: pie;
+    .pie{
+        grid-area: pie;
+    
+    }
 }
-
 /* ------------ 1er breakpoint -------------- */
 
 @media (min-width:768px){
@@ -622,37 +598,30 @@
     "main-v"
     "section-v"
     "footer-v";
-}
-
-.header-v{
-    grid-area: header-v;
-}
-.main-v{
-    grid-area: main-v;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
-    
-}
-.video-contenedor {
-    width: 90%;
+    .header-v{
+        grid-area: header-v;
+    }
+    .main-v{
+        grid-area: main-v;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-contenedor {
+        width: 90%;
 
-}
+    }
  
-.video-contenedor iframe {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin-top: 20px;
-    
- 
-    
-    
-}
+    .video-contenedor iframe {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+    }
 
-.section-v{
-    grid-area: section-v;
-}
+    .section-v{
+        grid-area: section-v;
+    }
     .youtube-icon{
         width: 100px;
     }
@@ -666,8 +635,10 @@
     }
 
 
-footer-v{
-    grid-area: footer-v;
+    .footer-v{
+        grid-area: footer-v;
+        margin-right: 40px;
+    }
 }
 /* ----------------- 1er breakpoint ---------------- */
 @media (min-width:768px){
@@ -689,7 +660,7 @@ footer-v{
         margin-top: 20px;
         
 
-}
+    }
 }
 
 /* ----------------- 2do breakpoint ----------------- */
@@ -712,7 +683,7 @@ footer-v{
         padding-bottom: 40px;
         margin-top: 20px;
        
-}
+    }
 }
     
 
