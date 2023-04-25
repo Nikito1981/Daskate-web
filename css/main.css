@@ -802,7 +802,7 @@ p {
   #gridDiscografia {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 55vh 10vh 20vh 5vh;
+    grid-template-rows: 15vh 60vh 10vh 20vh 10vh;
     grid-template-areas: "navegador" "discos" "enlacesMusica" "escuchanos" "pie";
   }
   .discos {
