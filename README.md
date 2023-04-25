@@ -78,9 +78,32 @@ Por ultimo en la pagina CONTACTO tambien utilice BS para realizar la grilla con 
 Aplique un vinculo sobre la palabra "desuscribirte" y tambien reemplace el boton de Enviar por un vinculo. 
 
 Tomando en cuenta las buenas practicas creé una pagina Error404 para utilizarla en los vinculos que no tenian un vinculo determinado.
+Utilice meta description en cada pagina para describir el contenido en la busqueda en los navegadores. En la pagina index tambien aplique los meta
+author y copyright. 
 
-Si bien la mayoria de los vinculos estan linkeados a todo el contenido que la banda ya posee en internet, hubo otros vinculos que los linkeé a la pagina
-error404 ya que ese contenido tiene otras implicancias. 
+Si bien la mayoria de los vinculos estan linkeados a todo el contenido que la banda ya posee en internet, hubo otros vinculos que los linkeé a la pagina error404 ya que ese contenido tiene otras implicancias. 
+
+Luego hice uso de GIT creando mi resositorio y realizando commits para guardar los cambios que fui realizando. El paso siguiente fue subir mi repositorio a GITHUB y realizando el deploy de mi sitio en Github. A continuacion dejo los links:
+
+https://github.com/Nikito1981/Daskate-web.git 
+
+https://nikito1981.github.io/Daskate-web/
+
+Luego realice la aplicacion de SASS utilizando NODE, y debo decir que fue lo que mas me costó. 
+Creacion de main.css el cual reemplace en todas las paginas por mi archivo style.css 
+Creacion de main.scss para los partials y la configuracion de la fuente.
+Creacion de partials (vars, mixins, commons, nav, tienda, contacto, medias y footer).
+Creacion de _nav.scss para la Anidacion de la botonera 
+Creacion de distintas variables de color , tamaño de fuente, sizing y estilos. 
+Creacion de extends y mixins 
+Creacion del archivo gitignore para ocultar infomacion no necesaria en el repositorio. 
+
+Por ultimo, utilice el servidor gratuito de Netlify 
+
+
+
+
+
 
 
 
