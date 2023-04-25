@@ -49,12 +49,12 @@ y realice la configuracion para que sea mi fuente predeterminada.
 Para mi Home page utilice Mobile first y realice los media queries para que sean adaptables a dispositos en 768px y 400px. Tomando como referencia mi 
 wireframe, decidi aplicar una imagen de fondo Background-image y construir un grid para luego poder ubicar el contenido segun mi preferencia. Sobre el
 contenido , construí una tabla acerca de los shows de la banda y aplique un boton con un vinculo "Comprar tickets". Luego sobre el margen derecho el 
-contenedor FLEX tiene vinculos para escuchar canciones y utilice iconos SVG directamente linkeados de internet. Tanto para el contenedor table como para
-el contenedor con links utilice FLEX para darle la alineacion correspondiente. 
+contenedor FLEX contiene vinculos para escuchar canciones y utilice iconos SVG directamente linkeados de internet. Tanto para el contenedor table como para
+el contenedor con links utilice FLEX para darle la alineacion y su flotacion correspondiente. 
 
 Acerca de mi barra de navegacion utilice una plantilla de BOOSTRAP y fui modificandola no solo en su estilo sino tambien agregando los SVG para los 
 vinculos a las redes sociales. Tuve problemas luego de aplicar SASS y la nav no quedo como inicialmente la habia pensado. No pude resolver el porqué 
-de esa modificación, pero estoy conforme de todas formas con el resultado final. En la pagina Index use la propiedad position fixed para que la nav 
+de esa modificación, pero estoy conforme de todas maneras con el resultado final. En la pagina Index use la propiedad position fixed para que la nav 
 acompañe el scroll down. Aplique un hover sobre los vinculos y en todas las paginas menos STORE las propiedades de la nav son las mismas y gracias a 
 BS la nav en responsive funciona con el boton hamburguesa correctamente excepto en la pagina VIDEOS en donde el boton hamburguesa una vez abierto queda fijo. Eso tampoco lo pude resolver. En la pagina Store al tener un fondo blanco mofidique los
 colores tanto de los vinculos como de los SVG y utilice mismo logo pero con otro color. 
@@ -67,21 +67,21 @@ cargar el sitio.
 Para la pagina Musica tambien utilice GRID desde mobile First y FLEX para que las imagenes en modo escritorio esten en linea (row - space-evenly). Tambien 
 utilice los SVG para los vinculos a las plataformas musicales. 
 
-En la pagina Videos tambien utilzando GRID con sus breakpoints introduci vinculos Iframe de videos de Youtube de la banda utilice 2 tamaños distintos para 
+En la pagina Videos tambien utilzando GRID con sus breakpoints introduci vinculos Iframe de videos de Youtube de la banda. Utilicé 2 tamaños distintos para 
 Escritorio y tablet (width:60%) y para Mobile (width:90%) ya que si dejaba siempre el mismo tamaño los vinculos en modo mobile se achicaban demasiado. 
 
 En la pagina STORE decidi utilizar BS para aplicar la grilla y ubicar el contenido sin usar media queries. Si bien mi tienda no es muy sofisticada utilicé
 varios recursos de estilo aprendidos en clase y use FLEX para acomodar el contenido que luego, tomando en cuenta la grilla de 12 columnas, fui adaptando a 
 la pantalla escritorio . Utilice imputs buttons y vinculos para darle la dinamica necesaria que una Tienda necesita. 
 
-Por ultimo en la pagina CONTACTO tambien utilice BS para realizar la grilla con el formulario de contacto y tambien un vinculo para el Sello discografico. 
+Por ultimo en la pagina CONTACTO tambien utilice BS para realizar la grilla con el formulario de contacto y tambien un vinculo/imagen para el Sello discografico. 
 Aplique un vinculo sobre la palabra "desuscribirte" y tambien reemplace el boton de Enviar por un vinculo. 
 
-Tomando en cuenta las buenas practicas creé una pagina Error404 para utilizarla en los vinculos que no tenian un vinculo determinado.
+Tomando en cuenta las buenas practicas creé una pagina Error404 para utilizarla en los vinculos que no tenian un destino determinado.
 Utilice meta description en cada pagina para describir el contenido en la busqueda en los navegadores. En la pagina index tambien aplique los meta
 author y copyright. 
 
-Si bien la mayoria de los vinculos estan linkeados a todo el contenido que la banda ya posee en internet, hubo otros vinculos que los linkeé a la pagina error404 ya que ese contenido tiene otras implicancias. 
+Si bien la mayoria de los vinculos estan linkeados a todo el contenido que la banda ya posee en internet, hubo otros vinculos que los linkeé a la pagina error404 ya que ese contenido tiene otras implicancias que no vimos en este curso.
 
 Luego hice uso de GIT creando mi resositorio y realizando commits para guardar los cambios que fui realizando. El paso siguiente fue subir mi repositorio a GITHUB y realizando el deploy de mi sitio en Github. A continuacion dejo los links:
 
@@ -96,9 +96,11 @@ Creacion de partials (vars, mixins, commons, nav, tienda, contacto, medias y foo
 Creacion de _nav.scss para la Anidacion de la botonera 
 Creacion de distintas variables de color , tamaño de fuente, sizing y estilos. 
 Creacion de extends y mixins 
-Creacion del archivo gitignore para ocultar infomacion no necesaria en el repositorio. 
+Creacion del archivo gitignore para ocultar informacion no necesaria en el repositorio. 
 
-Por ultimo, utilice el servidor gratuito de Netlify 
+Por ultimo, utilice el servidor gratuito de Netlify para realizar un deploy de mi sitio.
+
+
 
 
 

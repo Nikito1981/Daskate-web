@@ -1,3 +1,6 @@
+.bgTienda{
+    }
+
 
 .actions{
     background-color: $secondaryColor;
@@ -70,8 +73,10 @@
 
 
 .figure{
+    
     margin-top: 60px;
-    background-color: $inputColor;
+    background: radial-gradient(circle, rgba(227,227,227,1) 0%, rgba(0,0,0,0.6222688904663427) 100%);
+    width: 250px;
     padding: 10px;
     border-radius: 5px;
     @include flexArticulos (column, center);

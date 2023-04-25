@@ -255,7 +255,8 @@ p {
 
 .figure {
   margin-top: 60px;
-  background-color: #bebebe;
+  background: radial-gradient(circle, rgb(227, 227, 227) 0%, rgba(0, 0, 0, 0.6222688905) 100%);
+  width: 250px;
   padding: 10px;
   border-radius: 5px;
   display: flex;
