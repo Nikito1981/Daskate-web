@@ -27,13 +27,14 @@
 
 .three{
     margin-left: 20px;
-    margin-top: $marginTop;
+    margin-top: 70px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
 }
+    
+
 
     .three a{
     color: $keycolor;
@@ -44,7 +45,7 @@
     text-transform: lowercase;
 }
     .three a:hover{
-        color: rgb(135, 53, 53);
+        color: $hoverColor;
     }
     .three span{
         display:block;
@@ -63,31 +64,49 @@
     padding-left: 10px;
     list-style: none;
 
-    }   
+    }
+   
 
 
 
 .figure{
-    margin-top: 20px;
-    @include flexArticulos (column, center)
-    }
+    margin-top: 60px;
+    background-color: $inputColor;
+    padding: 10px;
+    border-radius: 5px;
+    @include flexArticulos (column, center);
+    
     .figure figcaption{
         color: $mainColor;
-        font-size: $textspecial;
+        font-size: $textNormal;
         margin-top: $marginTop;
-        text-align: justify;   
-        }
+           
+        
     .figure p{
-        font-size: $textp;
+        
         line-height: 1em;
+        
+        }
     }
     .btn-tienda{
-        border-radius: 2px;
-        border:solid;
-        background-color: $mainColor;
-        color: $secondaryColor;
+        border-radius: 5px;
+        border:none;
+        background-color: $specialColor;
         padding:4px;
+
+        a{
+            color:$mainColor;
+            text-decoration: none;
+            text-align: center;
+            font-size: $textspecial;
+            &:hover{
+                color: $btnColor;
+            }
+        
+            }
+        }
     
     }
+
     
 

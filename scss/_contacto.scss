@@ -1,8 +1,11 @@
-.form-text{
-    font-size: $textspecial;
-    text-align: justify;
-    line-height: $textLg;
+.marginMain{
+    margin-top: 50px;
 }
+.textTitulo{
+    text-align: center;
+    color: $secondaryColor;
+}
+
 .form-flex{
     
     margin-left: 20px;
@@ -14,24 +17,42 @@
 	align-content: flex-end;
     
 }
-.message-box{
-    width: 600px;
-    text-align: center;
-}
+
 .last{
-   
-    font-size: $textsm;
+    margin-top:50px ;
+    margin-bottom: 20px;
+    font-size: $textp;
+    color: $secondaryColor;
     line-height: normal;
+    text-align: center;
+    a{
+        color: $secondaryColor;
+        &:hover{
+            color:$btnColor
+        }
+    }
     
 }
+
 .booking-box{
-    
-    height: 290px;
+    margin-top: 10px;
+    height: 450px;
     margin-right: 10px;
-    background-color: $bookingBoxColor;
-    color:$secondaryColor;
-    padding: 10px 10px;
+    margin-left: 10px;
+    background-color: $specialColor;
+    color:$mainColor;
+    padding: 5px;
     border: none;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .logoXelcambio{
+        width: 300px;
+        height: 300px;
+    
+    }
         
 }

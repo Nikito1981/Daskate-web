@@ -1,10 +1,18 @@
 footer{
-    background-color: $mainColor;
-    font-size: $textsm;    
+    background-color: transparent;
+    font-size: $textp;
+    text-align: center;
+    margin-top: $marginTop;    
 }   
 
-    
-.footer-text{    
-    font-size: $textsm;
+.footerStore{
+    background-color: $secondaryColor;
+    font-size: $textp;
     text-align: center;
+    margin-top: $marginTop; 
+}   
+
+.footerContacto{
+    margin-top: 70px;
+    margin-bottom: $marginBottom;
 }

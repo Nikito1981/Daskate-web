@@ -1,59 +1,62 @@
 #home-grid{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh 40vh 25vh 25vh 10vh ;
+    grid-template-rows: 10vh 20vh 25vh 30vh 10vh ;
     grid-template-areas: 
     "primera"
     "empty"
     "tabla"
     "enlaces"
     "ultima";
-
-
-    .primera{
-        grid-area: primera;
-        margin-top: 5px;
-    
-    }
-    .empty{
-        grid-area: empty;
-    
-    }
-    .tabla{
-        grid-area: tabla;
-        border-radius: 10px;
-        font-size: $textp;
-        line-height: 10px;
-        padding: 0px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .boton-tickets{
-        background-color: $btnColor;
-        width:$fullWidth;
-        height:25px;    
-        text-decoration: none;
-        border-radius: 2px;
-        font-size: $textp;
-        margin-top: $marginTop;
 }
-    
-    .enlaces{
-        grid-area: enlaces;
-        border-radius: 10px;
-        line-height: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
 
-    .links a{
+.primera{
+    grid-area: primera;
+    margin-top: 5px;
+    
+}
+.empty{
+    grid-area: empty;
+    
+}
+.tabla{
+    grid-area: tabla;
+    border-radius: $borderRadius;
+    font-size: $textp;
+    line-height: 10px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.boton-tickets{
+    background-color: $btnColor;
+    width:110px;
+    height:25px;
+    border-radius: 2px;
+    font-size: $textNormal;
+    margin-top: $marginTop;
+    
+}
+
+.enlaces{
+    grid-area: enlaces;
+    margin-top: 70px;
+    border-radius: $borderRadius;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.links a{
         text-decoration: none;
+        line-height: 30px;
         font-size: $textNormal;
         color: $specialColor;
         display: flex;
@@ -62,16 +65,21 @@
         justify-content: center;
     } 
 
-    .plataformas{
-        margin-top:5px;
-        display:flex;
-        flex-direction: row;
-    }
+.plataformas{
+    margin-top:5px;
+    display:flex;
+    flex-direction: row;
+    
+    
+    
 
-    .ultima{
-        grid-area: ultima;
-        margin-top: 5px;
-    }
+
+}
+
+.ultima{
+    grid-area: ultima;
+    margin-top: $marginFooter;
+    
 }
 
 
@@ -81,8 +89,8 @@
     .body-img{
         background-image: url(../img/NefertitiBG768.webp);
         background-repeat: no-repeat;
-        background-color: black;
-        width: 100%;
+        background-color: $mainColor;
+        width: $fullWidth;
     
 
     }
@@ -110,7 +118,7 @@
         grid-area: tabla;
         margin-left: 10px;
         border-radius: 10px;
-        font-size: 1.1em;
+        font-size: $textp;
         line-height: 20px;
         padding: 0px;
         text-align: left;
@@ -125,17 +133,17 @@
         width:200px;
         height:22px;
         border-radius: 2px;
-        color: $secondaryColor;
         font-size: $textp;
-        margin-top: $marginTop;
+        margin-top: 10px;
         
     }
     
     .enlaces{
         grid-area: enlaces;
+        margin-top: 0px;
         margin-right: 10px;
-        border-radius: 10px;
-        font-size: 1em;
+        border-radius: $borderRadius;
+        font-size: $textp;
         line-height: 20px;
         padding: 0px;
         text-align: right;
@@ -184,8 +192,8 @@
     .body-img{
         background-image: url(../img/NefertitiBG1200.webp);
         background-repeat: no-repeat;
-        background-color: black;
-        background-size: 100%;
+        background-color: $mainColor;
+        background-size: $bgFull;
     }
 
     #home-grid{
@@ -198,12 +206,36 @@
         "tabla enlaces"
         "ultima ultima";
     }
+
+    .tabla{
+        grid-area: tabla;
+        margin-left: 10px;
+        border-radius: $borderRadius;
+        font-size: $textspecial;
+        line-height: 20px;
+        padding: 0px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+    }
+      .tabla .boton-tickets{
+        background-color: $btnColor;
+        width:200px;
+        height:22px;
+        border-radius: 2px;
+        font-size: $textp;
+        margin-top: 10px;
+        
+    }
     
 
     .enlaces{
         grid-area: enlaces;
         margin-right: 20px;
-        border-radius: 10px;
+        border-radius: $borderRadius;
         font-size: $textNormal;
         line-height: 20px;
         padding: 0px;
@@ -218,8 +250,8 @@
     
     .links a{
             text-decoration: none;
-            font-size: $textMd;
-            color: rgb(215, 189, 24);
+            font-size: $textspecial;
+            color: $specialColor;
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-start;
@@ -247,14 +279,14 @@
    }
 
    .box-historia{
-    width: 100%;
-    margin-top: 10px;
-    @include textos ($secondaryColor,$textLg,);
+    width: $fullWidth;
+    margin-top: $marginTop;
+    @include textos ($textLg,$secondaryColor,);
     text-align: center;
     background-image: url(../img/historia.html/fuego-historia.png);
     background-position:center;
     background-repeat:no-repeat;
-    background-size: 100%;
+    background-size: $bgFull;
     background-attachment:scroll;
    }
 
@@ -276,7 +308,7 @@
    
     #texto{
         grid-area: texto;
-        width: 100%;
+        width: $fullWidth;
         margin-top: $marginTop;
         margin-left: 5px;
         display: flex;
@@ -289,7 +321,7 @@
         grid-area: lea;
         background-image: url(../img/historia.html/Lea350.webp);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: $bgFull;
         margin-left: 5px;
         margin-top: 10px;
     }
@@ -297,14 +329,14 @@
         grid-area: euge;
         background-image: url(../img/historia.html/euge350px.webp);
         margin-left: 5px;
-        background-size: 100%;
+        background-size: $bgFull;
         margin-top: 10px;
     }
     #tano{
         grid-area: tano;
         background-image: url(../img/historia.html/tano350.webp); 
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: $bgFull;
         margin-left: 5px;
         margin-top: 10px;
     }
@@ -312,7 +344,7 @@
         grid-area: ruso;
         background-image: url(../img/historia.html/ruso350.webp);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: $bgFull;
         margin-left: 5px;
         margin-top: 10px;
     }
@@ -320,7 +352,7 @@
         grid-area: cache;
         background-image: url(../img/historia.html/cache1.webp);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: $bgFull;
         margin-left: 5px;
         margin-top: 10px;
     }
@@ -336,7 +368,7 @@
 @media (min-width:768px){
     .gridHistoria{
         width: 80%;
-        margin-top: 20px;
+        margin-top: $marginTop;
         margin-left: 80px;
         display: grid;
         grid-template-columns: 1fr;
@@ -391,7 +423,7 @@
     .gridHistoria{
         width: $halfWidth;
         margin-left: 150px;
-        margin-top: 20px;
+        margin-top: $marginTop;
         display: grid;
         
         grid-template-columns: 300px 300px 300px;
@@ -407,34 +439,34 @@
         grid-area: lea;
         background-image: url(../img/historia.html/Lea.webp);
         background-size: 100%;
-        size-adjust: 100%;
+        size-adjust: $bgFull;
     
     
     }
     #euge{
         grid-area: euge;
         background-image: url(../img/historia.html/euge400.webp);
-        background-size: 100%;
+        background-size: $bgFull;
     
     
     }
     #tano{
         grid-area: tano;
         background-image: url(../img/historia.html/tano2.jpg);
-        background-size: 100%;
+        background-size: $bgFull;
         
         ;
     }
     #ruso{
         grid-area: ruso;
         background-image: url(../img/historia.html/ruso.webp);
-        background-size: 100%;
+        background-size: $bgFull;
     
     }
     #cache{
         grid-area: cache;
         background-image: url(../img/historia.html/cache1.webp);
-        background-image: 100%;
+        background-image: $bgFull;
        
     }
     .texto{
@@ -455,7 +487,7 @@
         background-image: url(../img/historia.html/fuego-historia.png);
         background-position:center;
         background-repeat:no-repeat;
-        background-size: 100%;
+        background-size: $bgFull;
         background-attachment:scroll;
        }
     
@@ -475,28 +507,28 @@
     "enlacesMusica"
     "escuchanos"
     "pie";
-
-
-    .navegador{
-        grid-area: navegador;
+}
+.navegador{
+    grid-area: navegador;
    
-    }
+}
 
-    .discos{
-        grid-area: discos;
+.discos{
+    grid-area: discos;
+    margin-top: 50px;
     
 	
-    }
-        .discografia{
-            width: $fullWidth;
-            margin: 10px auto 10px auto;
-            display: flex;
-	        flex-direction: column;
-	        justify-content: center;
-	        align-items: center;
-	        }
+}
+    .discografia{
+        width: $fullWidth;
+        margin: 10px auto 10px auto;
+        display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    }
     .tapa{
-        margin-top: 20px;
+        margin-top: $marginTop;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -506,24 +538,23 @@
         height: 300px;
     }
 
-    .enlacesMusica{
-        grid-area: enlacesMusica;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+.enlacesMusica{
+    grid-area: enlacesMusica;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
-    }
-
-    .escuchanos{
-        grid-area: escuchanos;
-    }
-
-    .pie{
-        grid-area: pie;
-    
-    }
 }
+
+.escuchanos{
+    grid-area: escuchanos;
+}
+
+.pie{
+    grid-area: pie;
+}
+
 /* ------------ 1er breakpoint -------------- */
 
 @media (min-width:768px){
@@ -548,20 +579,18 @@
     #gridDiscografia{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10vh 50vh 10vh 10vh 10vh 10vh;
+        grid-template-rows: 10vh 55vh 10vh 20vh 5vh;
         grid-template-areas: 
         "navegador"
         "discos"
         "enlacesMusica"
         "escuchanos"
-        "vacio"
         "pie";
     }
-    .vacio{
-        grid-area: vacio;
-    }
+
     .discos{
         grid-area: discos;
+        margin-top: 50px;
         display: flex;
 	    flex-direction: row;
 	    justify-content: space-evenly;
@@ -571,7 +600,7 @@
         
 	    
     .tapa{
-        margin-top: 20px;
+        margin-top: $marginTop;
         
     }
     .img-size{
@@ -587,10 +616,16 @@
         justify-content: space-evenly;
         
     }
+    .pie{
+        grid-area: pie;
+        margin-top: $marginTop;
+        
+    }
 }
 
 /* ---------------- videos.hmtl -------------- */
 #gridVideos{
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -598,33 +633,47 @@
     "main-v"
     "section-v"
     "footer-v";
+}
+
+
+.header-v{
+    grid-area: header-v;
+}
+.main-v{
+    grid-area: main-v;
+    margin-top: 50px;
+    font-size: $textp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-    .header-v{
-        grid-area: header-v;
-    }
-    .main-v{
-        grid-area: main-v;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .video-contenedor {
-        width: 90%;
+    
+}
+.video-contenedor {
+    width: 90%;
 
-    }
+}
  
-    .video-contenedor iframe {
-        padding-top: 30px;
-        padding-bottom: 40px;
-        margin-top: 20px;
-    }
+.video-contenedor iframe {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: $marginTop;
+    
+ 
+    
+    
+}
 
-    .section-v{
-        grid-area: section-v;
-    }
+.section-v{
+    grid-area: section-v;
+}
+
     .youtube-icon{
-        width: 100px;
-    }
+    
+            width: 100px;
+            height: 100px;
+        }
+    
     .link-youtube{
         display: flex;
         flex-direction: column;
@@ -635,11 +684,11 @@
     }
 
 
-    .footer-v{
-        grid-area: footer-v;
-        margin-right: 40px;
-    }
+.footer-v{
+    grid-area: footer-v;
 }
+
+
 /* ----------------- 1er breakpoint ---------------- */
 @media (min-width:768px){
 
@@ -653,19 +702,24 @@
         "section-v"
         "footer-v";
     }
+    .video-contenedor {
+        width: 60%;
+    
+    }
 
     .video-contenedor iframe {
         padding-top: 30px;
         padding-bottom: 40px;
-        margin-top: 20px;
+        margin-top: $marginTop;
         
 
-    }
 }
+}
+
 
 /* ----------------- 2do breakpoint ----------------- */
 
-@media (min-width:400px){
+@media (min-width:1200px){
 
     #gridVideos{
         display: grid;
@@ -678,13 +732,19 @@
         "footer-v";
     }
 
+    .video-contenedor {
+        width: 60%;
+    
+    }
+
     .video-contenedor iframe {
         padding-top: 30px;
         padding-bottom: 40px;
-        margin-top: 20px;
+        margin-top: $marginTop;
        
-    }
 }
+}
+
     
 
 
@@ -692,5 +752,3 @@
     width: 30px;
     height: 30px;
 }
-
-
