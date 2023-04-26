@@ -95,10 +95,19 @@ Creacion de main.scss para los partials y la configuracion de la fuente.
 Creacion de partials (vars, mixins, commons, nav, tienda, contacto, medias y footer).
 Creacion de _nav.scss para la Anidacion de la botonera 
 Creacion de distintas variables de color , tamaño de fuente, sizing y estilos. 
-Creacion de extends y mixins 
+Creacion de mixins 
+En referencia a la creacion de extends , he tenido problemas para aplicarlos. En el partial de mixins armé un extend para cambiar el footer de color en la pagina index, pero no he logrado modificarlo por lo que terminé usando una clase text-white. 
 Creacion del archivo gitignore para ocultar informacion no necesaria en el repositorio. 
 
 Por ultimo, utilice el servidor gratuito de Netlify para realizar un deploy de mi sitio.
+
+Link netlify 
+
+https://pf-nicolas-pandolfelli.netlify.app/
+
+
+
+
 
 
 

@@ -1,5 +1,14 @@
 //extends
 
+.footerHome{
+    @extend .footer;
+    color: $textspecial;
+    font-size: $textp;
+    text-align: center;
+    margin-top: $marginTop;
+
+}
+
 .box-gral{
     width: $fullWidth;
     padding: 10px 60px;
@@ -11,13 +20,8 @@
     background-color: $secondaryColor;
 }
 
-.footerStore{
-    @extend footer;
-    
-
-}
-
-.btn-tienda2{
+.btnTienda2{
+    @extend .btn-tienda;
     background-color: $secondaryColor;
     padding:4px;
     border-radius: 5px;

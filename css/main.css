@@ -2,6 +2,13 @@
   font-family: Friz Quadrata;
   src: url(../fonts/AnyConv.com__Friz\ Quadrata\ Regular.woff);
 }
+.footerHome {
+  color: 1.2em;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .box-gral, .box-white {
   width: 100%;
   padding: 10px 60px;
@@ -11,19 +18,19 @@
   background-color: #ffffff;
 }
 
-.btn-tienda2 {
+.btnTienda2 {
   background-color: #ffffff;
   padding: 4px;
   border-radius: 5px;
   border: none;
 }
-.btn-tienda2 a {
+.btnTienda2 a {
   color: #000000;
   text-decoration: none;
   text-align: center;
   font-size: 1.2em;
 }
-.btn-tienda2 a:hover {
+.btnTienda2 a:hover {
   color: #ff0000;
 }
 
@@ -255,7 +262,7 @@ p {
 
 .figure {
   margin-top: 60px;
-  background: radial-gradient(circle, rgb(227, 227, 227) 0%, rgba(0, 0, 0, 0.6222688905) 100%);
+  background: linear-gradient(90deg, #2f79b8 0%, #38586c 50%, #9d9993 100%);
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -271,19 +278,19 @@ p {
 .figure .figure figcaption .figure p {
   line-height: 1em;
 }
-.figure .btn-tienda {
+.figure .btn-tienda, .figure .btnTienda2 {
   border-radius: 5px;
   border: none;
   background-color: #fecd08;
   padding: 4px;
 }
-.figure .btn-tienda a {
+.figure .btn-tienda a, .figure .btnTienda2 a {
   color: #000000;
   text-decoration: none;
   text-align: center;
   font-size: 1.2em;
 }
-.figure .btn-tienda a:hover {
+.figure .btn-tienda a:hover, .figure .btnTienda2 a:hover {
   color: #ff0000;
 }
 
@@ -343,7 +350,7 @@ p {
 #home-grid {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 10vh 20vh 25vh 30vh 10vh;
+  grid-template-rows: 10vh 25vh 25vh 30vh 10vh;
   grid-template-areas: "primera" "empty" "tabla" "enlaces" "ultima";
 }
 
@@ -380,7 +387,7 @@ p {
 
 .enlaces {
   grid-area: enlaces;
-  margin-top: 70px;
+  margin-top: 20px;
   border-radius: 10px;
   line-height: 20px;
   display: flex;
@@ -925,7 +932,7 @@ p {
   height: 30px;
 }
 
-footer, .footerStore {
+.footer, .footerHome {
   background-color: transparent;
   font-size: 0.9em;
   text-align: center;

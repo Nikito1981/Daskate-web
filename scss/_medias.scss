@@ -1,7 +1,7 @@
 #home-grid{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh 20vh 25vh 30vh 10vh ;
+    grid-template-rows: 10vh 25vh 25vh 30vh 10vh ;
     grid-template-areas: 
     "primera"
     "empty"
@@ -44,7 +44,8 @@
 
 .enlaces{
     grid-area: enlaces;
-    margin-top: 70px;
+    margin-top: $marginTop;
+    
     border-radius: $borderRadius;
     line-height: 20px;
     display: flex;
